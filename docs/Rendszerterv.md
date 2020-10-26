@@ -12,6 +12,16 @@ Az adatbázis kapcsolathoz szükséges négy modell osztály,
 amely létrehozza, fenntartja, és zárja az adatbáziskapcsolatot.
 A felszedett adatokat megfelelően repzezentálva szolgáltatjuk, továbbá a felületen lehetőségük nyílik új munkák felvételére, a meglévő munkafolyamatok módosítására, továbbá a dolgozók kezelésére. A grafikus megjelenítést JavaFX segítségével valósítjuk meg. A program controller részének megvalósítását Java programozási nyelven terveztük el. A projekthez továbbá felhasználtuk a Maven nevű projekt menedzsment eszköztárat is.
 
+#### 3.2 Projektmunkások és felelősségeik
+
+A projektet készítő három személy teljesen egyenjogú szerepkörökkel rendelkezik. Mind hármuk kiveszi a részét a munka minden egyes fázisából és részéből. Mindnyájan egyenrangú fejlesztői a programnak.
+
+| Név |   Szerepkör |
+| -----------|--------- |
+| Benyovszki Balázs Zoltán  | szoftverfejlesztő |
+| Csontos Róbert  | szoftverfejlesztő |
+| Kis Patrik    | szoftverfejlesztő |
+
 ### Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
