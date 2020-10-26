@@ -60,7 +60,19 @@ Szerelő hozzáadása a rendszerhez:
 Törlés a rendszerből:
 ![Törlés a rendszerből](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/torles.png)
 
+#### 9.1 Hardver és hálózati topológia:
+A számítógépnek amin ezt a szoftvert használni kívánják el kell érnie a MySQL adatbázist ami lehet lokális is, de internetre telepített is, ezért javasolt az internetelérés biztosítása azon a számítógépen melyen a szoftvert használni kívánják.
 
+A gépeknek nem feltétlenül kell erősnek lenniük azonban a szoftver használatához ssd javasolt. 
+
+Az alacsony rendszerigény a következő: 
+- 3GB RAM
+- Működő processzor
+- Integrált működő videókártya
+- ssd
+- megjelenítő
+
+A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a Java platformfüggetlen megvalósítása miatt a program képes futni a Java 15-el kompatibilis Linux rendszereken is.
 
 ### 12. Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
