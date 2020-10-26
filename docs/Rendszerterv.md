@@ -1,6 +1,80 @@
 # Rendszerterv
 
-### Archtekturális terv
+### 2. A rendszer célja
+
+A rendszer célja, hogy az autószerelő műhely egy korábbi szoftver verzióját továbbfejlessze. Ezáltal egy sokkal modernebb, fejlettebb, és funkciókban gazdagabb alkalmazás lesz, mely nagyban elősegíti a dolgozók munkáját. Ennek köszönhetően új lehetőségek nyílnak meg a dolgozók előtt és hatékonyabban tud működni a műhely.
+
+### 3. A projekt tervezete
+
+#### 3.1 A rendszer felépítése
+
+Az adatbázis kapcsolathoz szükséges négy modell osztály,
+amely létrehozza, fenntartja, és zárja az adatbáziskapcsolatot.
+A felszedett adatokat megfelelően repzezentálva szolgáltatjuk, továbbá a felületen lehetőségük nyílik új munkák felvételére, a meglévő munkafolyamatok módosítására, továbbá a dolgozók kezelésére. A grafikus megjelenítést JavaFX segítségével valósítjuk meg. A program controller részének megvalósítását Java programozási nyelven terveztük el. A projekthez továbbá felhasználtuk a Maven nevű projekt menedzsment eszköztárat is.
+
+#### 3.2 Projektmunkások és felelősségeik
+
+A projektet készítő három személy teljesen egyenjogú szerepkörökkel rendelkezik. Mind hármuk kiveszi a részét a munka minden egyes fázisából és részéből. Mindnyájan egyenrangú fejlesztői a programnak.
+
+| Név |   Szerepkör |
+| -----------|--------- |
+| Benyovszki Balázs Zoltán  | szoftverfejlesztő |
+| Csontos Róbert  | szoftverfejlesztő |
+| Kis Patrik    | szoftverfejlesztő |
+
+### 5. Üzleti szereplők
+
+A programot az éppen használó szerelő és adminisztrációs munkatárs. A szerelő műhely összes alkalmazottjának megvan a végzettsége és a tudása ahhoz, hogy a programot magabiztosan képes legyen használni. Az új munkatársak pedig betanításon esnek át, mielőtt használatba vennék az alkalmazást.
+
+#### 5.1. Üzleti entitások
+
+- A szoftvert használó adminisztációs munkatársak
+- A szoftvert használó szerelők
+- Azon munkatársak akik a későbbiekben kerülnek felvételre
+
+### 6. Követelmények
+
+#### 6.1 Funkcionális követelmények
+
+- Könnyedén kezelhető rendszer
+- Letisztult, könnyedén átlátható adatbázis rendszer
+- Egyszerű lekérdezések generálása a rendszerből
+- Egyszerűsített adatfelvétel és módosítás
+
+#### 6.2 Nem funkcionális követelmények
+
+- Egyszerű, könnyen kezelhető felhasználói felület
+- Optimalizált betűméretek, színek és típusok
+
+### 9. Rendszerhasználati esetek és lefutásai
+
+Tulaj és autó hozzáadása a rendszerhez:
+![Tulaj és autó hozzáadása a rendszerhez](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/felvetel.png)
+
+Autó státuszának módosítása a rendszerben:
+![Autó státuszának módosítása a rendszerben](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/statusz%20v%C3%A1lt%C3%A1s.png)
+
+Szerelő hozzáadása a rendszerhez:
+![Szerelő hozzáadása a rendszerhez](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/szerelo.png)
+
+Törlés a rendszerből:
+![Törlés a rendszerből](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/torles.png)
+
+#### 9.1 Hardver és hálózati topológia:
+A számítógépnek amin ezt a szoftvert használni kívánják el kell érnie a MySQL adatbázist ami lehet lokális is, de internetre telepített is, ezért javasolt az internetelérés biztosítása azon a számítógépen melyen a szoftvert használni kívánják.
+
+A gépeknek nem feltétlenül kell erősnek lenniük azonban a szoftver használatához ssd javasolt. 
+
+Az alacsony rendszerigény a következő: 
+- 3GB RAM
+- Működő processzor
+- Integrált működő videókártya
+- ssd
+- megjelenítő
+
+A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a Java platformfüggetlen megvalósítása miatt a program képes futni a Java 15-el kompatibilis Linux rendszereken is.
+
+### 12. Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
    az autók felvétele (irodavezető feladata) valamint a szerelők (autó javítási fázisai - javításra vár, javítás alatt, elkészült autó) közti kommunikáció megkönnyítése, elektronikus úton lehetővé tétele.
