@@ -22,3 +22,9 @@ Cégünk telephelye Debrecentől 15 km-re található, egy kisebb városban. Miv
    **Összesítő**: Itt a végelszámolás kerül kiírásra a már elkészült illetve kifizetett javítások.
 
 ### 6. Képernyőtervek
+
+A cél, hogy a javafx felhasználásaval minnél egyszerűbb és letisztultabb felhasználói felület kerüljön elkészítésre. A program alapját egy megjelenítési panel fogja alkotni ahol lehetséges lesz majd az egyes menüpontok között váltva különböző feladatokat elvégezni.
+ - Lehetőség lesz új adat felvételére az egyik menüpontban. Ez egy varázslón keresztül valósul meg, mely két lépésben veszi fel az adatot.
+ - A felvett adatok megtekintése és a szerelés alatt álló autók egy pontban lesznek elérhetőek. Ebből a pontból lesz lehetőség a szerkesztést is megkezdeni egy felugró ablak segítségével.
+ - Az elkészült autók egy másik menüpontban lesznek megtekinthetőek és itt lesz lehetőség arra is, hogy a fizetéshez a számlát elkészítsük. Továbbá ha már szükségtelenné válik az autó adatinak örzése a törlést is itt lesz lehetőség elvégezni.
+ - Végül lesz egy menüpont ahol a szerelők adatait lesz lehetőség kezelni. Ebben a menüben lesz majd lehetőség új szerelő hozzáadására, és a meglévő szerelők adatainak módosítására.
