@@ -20,3 +20,5 @@ Cégünk telephelye Debrecentől 15 km-re található, egy kisebb városban. Miv
    **Új autó**: Itt van lehetőség új autó hozzűadására minden beviteli mező kitöltésével.
    **Javítás alatt**: Itt azokat az autókat lehet szerkeszteni amelyek jelenleg javítása alatt vannak vagy még nincs befejezve a javítás, de már dolgozott rajta valaki vagy akoz amelyekkel még sajnos nem tudtunk foglalkozni.
    **Összesítő**: Itt a végelszámolás kerül kiírásra a már elkészült illetve kifizetett javítások.
+
+### 6. Képernyőtervek
