@@ -12,3 +12,7 @@
    Cégünk szeretné a jelenlegi adminisztrációs rendszerének a továbbfejlesztését a méggyorsabb és méghatékonyabb munkavégzés céljából. A cégünknél rengeteg a visszatérő ügyfél és a jelenlegi rendszerben ezt bonyolult adminisztrálni mivel mindíg hozzá kell adni az ügyfelet. Ezt szeretnénk felgyorsítani.
    Valamint mostmár sok szerelő kolléga dolgozik műhelyünkben és szeretnénk nyomon követni azt, hogy mikor melyik munkatársunk melyik autót javítja. Magyarország új számlázási rendszere miatt szeretnénk ha a programból közvetlenül kinyomtattható lenne a számla is. Valamint a felhasználói felület átláthatóságának a javítását is igényelnénk
    Kereső funkciók implementációját is igényelnénk.
+
+### 3. Jelenlegi üzleti folyamatok
+
+    
