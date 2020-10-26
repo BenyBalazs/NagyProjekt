@@ -11,3 +11,15 @@
    - Követelmények
    - Technológiai környezet
    - Tervező(k) technológiával kapcsolatos tapasztalatai.
+   
+   Architektúra elemek:
+   
+   - Architektúrális minta
+      - elemek, kapcsolatok, kényszerek
+      - pl: kliens, adatbázis-szerver kapcsolat (minta)
+   - Referencia modell
+      - egyszerű funkcionális elosztás, adatfolyam kezelő megoldások
+      - pl: adatbázis kezelő rendszer
+   - Referencia architektúra
+      - referencia modell leképezése a szoftver elemeire
+      - pl: ISO-OSI architektúra
