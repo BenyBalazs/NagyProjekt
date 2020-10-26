@@ -32,6 +32,10 @@ A programot az éppen használó szerelő és adminisztrációs munkatárs. A sz
 - A szoftvert használó szerelők
 - Azon munkatársak akik a későbbiekben kerülnek felvételre
 
+### 6. Követelmények
+
+
+
 ### Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
