@@ -20,3 +20,7 @@
  * Végezetül amikor az autó elkészül lehetőség van a státuszát készre állítani, majd a fizetést követően, fizetettre állítani a státuszt és törölni az autót az adatbázisból.
 
 ### 4. Igényelt üzleti folyamatok
+
+ * A továbbfejlesztett alkalmazásban legyen lehetőség a szerelők adatbázisban való tárolására, és a szerelők hozzárendelésére az egyes autók javításához.
+ * Legyen kivitelezhető, hogy egy tulajdonoshoz több autót is hozzá lehessen rendelni, és az autókat külön kezelni.
+ * A munka végeztével legyen lehetőség számla készítésére, mely tartalmazza a javítási költségeket.
