@@ -22,6 +22,10 @@ A projektet készítő három személy teljesen egyenjogú szerepkörökkel rend
 | Csontos Róbert  | szoftverfejlesztő |
 | Kis Patrik    | szoftverfejlesztő |
 
+### 5. Üzleti szereplők
+
+
+
 ### Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
