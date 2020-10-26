@@ -48,6 +48,18 @@ A programot az éppen használó szerelő és adminisztrációs munkatárs. A sz
 
 ### 9. Rendszerhasználati esetek és lefutásai
 
+Tulaj és autó hozzáadása a rendszerhez:
+![Tulaj és autó hozzáadása a rendszerhez](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/felvetel.png)
+
+Autó státuszának módosítása a rendszerben:
+![Autó státuszának módosítása a rendszerben](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/statusz%20v%C3%A1lt%C3%A1s.png)
+
+Szerelő hozzáadása a rendszerhez:
+![Szerelő hozzáadása a rendszerhez](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/szerelo.png)
+
+Törlés a rendszerből:
+![Törlés a rendszerből](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/torles.png)
+
 
 
 ### 12. Archtekturális terv
