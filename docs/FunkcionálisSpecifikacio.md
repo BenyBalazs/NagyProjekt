@@ -8,3 +8,11 @@
    - A számlán tüntesse fel a vevő adatait, a cég adatait valamint az árat áfával.
    - Ezeket a funkciókat tartalmazza de továbbra is elvárás, hogy a program könnyen kezelhető maradjon.
    
+### 4. Jelenlegi üzleti feolyamatok modellje.
+   Az adatok tárolására relációs adatbázist használunk melyben jelenleg 1 tábla van ezt mindenképpen javítani kell, hiszen az elszaporodó adatok lassítják a programot.
+   A szoftver menüsorából az alábbi menüsorok érhetőek el.
+    
+   **Szerkesztés**: Tetszőlegesen kiválasztott autó szerkesztését teszi lehetővé. Itt módosítható az összes adat a legfontosabb az ár.
+   **Új autó**: Itt van lehetőség új autó hozzűadására minden beviteli mező kitöltésével.
+   **Javítás alatt**: Itt azokat az autókat lehet szerkeszteni amelyek jelenleg javítása alatt vannak vagy még nincs befejezve a javítás, de már dolgozott rajta valaki vagy akoz amelyekkel még sajnos nem tudtunk foglalkozni.
+   **Összesítő**: Itt a végelszámolás kerül kiírásra a már elkészült illetve kifizetett javítások.
