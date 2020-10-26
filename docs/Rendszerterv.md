@@ -41,6 +41,11 @@ A programot az éppen használó szerelő és adminisztrációs munkatárs. A sz
 - Egyszerű lekérdezések generálása a rendszerből
 - Egyszerűsített adatfelvétel és módosítás
 
+#### 6.2 Nem funkcionális követelmények
+
+- Egyszerű, könnyen kezelhető felhasználói felület
+- Optimalizált betűméretek, színek és típusok
+
 ### 12. Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
