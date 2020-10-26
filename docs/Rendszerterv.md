@@ -1,5 +1,9 @@
 # Rendszerterv
 
+### 2. A rendszer célja
+
+
+
 ### Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
