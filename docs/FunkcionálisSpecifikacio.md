@@ -2,7 +2,7 @@
 
 ### 1. Bevezetés
 
-
+Cégünk telephelye Debrecentől 15 km-re található, egy kisebb városban. Mivel a környéken nem található olyan autószerelő műhely, mely ilyen széleskörű szolgáltatásokat nyújt, ezért cégünk vezetése a előrelépés mellett döntött, ennek megfelelően egy gyors és hatékony számítógépes rendszer fejlesztését tervezzük. Ezen igényekre támaszkodva továbbfejlesztjük a programot mellyel jelenleg dolgozunk. A továbbfejlesztés célja, hogy hatékonyabban lehessen a jelenleginél végezni az adminisztrációt, továbbá pontosabban is.
 
 ### 2. Használati Esetek
    - A Rendszerrel szeretnénk nyilvántartani ügyfeleinket. Sok visszatérő ügyfelünk van akiknek sokszor több autója is vav. Minket megbízható cégnek itéltek meg ezért rendszeresen mi végezzük az autóik szervizelését az egyszerű rutin szervíztől a komolyabb javításokig. Ezért szeretnénk, hogy a programban külön tudjuk kezelni az ügyfeleinket. Tárolni szeretnénk a nevüket és többféle elérhetőséget pl.: cím, email, telefonszám.
