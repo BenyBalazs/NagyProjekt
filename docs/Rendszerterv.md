@@ -34,9 +34,14 @@ A programot az éppen használó szerelő és adminisztrációs munkatárs. A sz
 
 ### 6. Követelmények
 
+#### 6.1 Funkcionális követelmények
 
+- Könnyedén kezelhető rendszer
+- Letisztult, könnyedén átlátható adatbázis rendszer
+- Egyszerű lekérdezések generálása a rendszerből
+- Egyszerűsített adatfelvétel és módosítás
 
-### Archtekturális terv
+### 12. Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
    az autók felvétele (irodavezető feladata) valamint a szerelők (autó javítási fázisai - javításra vár, javítás alatt, elkészült autó) közti kommunikáció megkönnyítése, elektronikus úton lehetővé tétele.
