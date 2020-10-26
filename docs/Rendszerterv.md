@@ -26,6 +26,12 @@ A projektet készítő három személy teljesen egyenjogú szerepkörökkel rend
 
 A programot az éppen használó szerelő és adminisztrációs munkatárs. A szerelő műhely összes alkalmazottjának megvan a végzettsége és a tudása ahhoz, hogy a programot magabiztosan képes legyen használni. Az új munkatársak pedig betanításon esnek át, mielőtt használatba vennék az alkalmazást.
 
+#### 5.1. Üzleti entitások
+
+- A szoftvert használó adminisztációs munkatársak
+- A szoftvert használó szerelők
+- Azon munkatársak akik a későbbiekben kerülnek felvételre
+
 ### Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
