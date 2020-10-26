@@ -26,4 +26,5 @@
    ### 12.1. A rendszer bővíthetősége
    A rendszert minden esetben úgy kell megtervezni, hogy később könnyen módosítható és funkcionalitását teknitve akárki által bővíthető legyen. kollégáink is így fognak eljárni.
    
-   
+   ### 12.2. A rendszer biztonsági funkciói:
+   A rendszer offline fut ezért csak az adatbáis és a kliens közötti biztonságos kommunikációt szükségek kiépíteni. Ezt kollégáink elvégzik.
