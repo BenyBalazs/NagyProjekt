@@ -46,6 +46,10 @@ A programot az éppen használó szerelő és adminisztrációs munkatárs. A sz
 - Egyszerű, könnyen kezelhető felhasználói felület
 - Optimalizált betűméretek, színek és típusok
 
+### 9. Rendszerhasználati esetek és lefutásai
+
+
+
 ### 12. Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
