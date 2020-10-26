@@ -6,7 +6,11 @@ A rendszer célja, hogy az autószerelő műhely egy korábbi szoftver verziój�
 
 ### 3. A projekt tervezete
 
+#### 3.1 A rendszer felépítése
 
+Az adatbázis kapcsolathoz szükséges négy modell osztály,
+amely létrehozza, fenntartja, és zárja az adatbáziskapcsolatot.
+A felszedett adatokat megfelelően repzezentálva szolgáltatjuk, továbbá a felületen lehetőségük nyílik új munkák felvételére, a meglévő munkafolyamatok módosítására, továbbá a dolgozók kezelésére. A grafikus megjelenítést JavaFX segítségével valósítjuk meg. A program controller részének megvalósítását Java programozási nyelven terveztük el. A projekthez továbbá felhasználtuk a Maven nevű projekt menedzsment eszköztárat is.
 
 ### Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
