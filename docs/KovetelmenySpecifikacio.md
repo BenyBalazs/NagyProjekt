@@ -15,4 +15,8 @@
 
 ### 3. Jelenlegi üzleti folyamatok
 
-    
+ * Cégünk jelenleg az önök által készített autószerelő alkalmazást használja, melynek segítségével, lehetőség van új autók felvételére az adatbázisba. Ezen folyamat során tároljuk az autók egyes adatait valamint a javítandó hibát.
+ * Ezután az autó bekerül az adatbázisba és státusza megkapja a szerelésre vár státuszt. Majd amikor javításra kerül akkor a státusz változik és lehetőség van a költségeket számontartani.
+ * Végezetül amikor az autó elkészül lehetőség van a státuszát készre állítani, majd a fizetést követően, fizetettre állítani a státuszt és törölni az autót az adatbázisból.
+
+### 4. Igényelt üzleti folyamatok
