@@ -106,3 +106,5 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    ### 12.3 Adatbázis
    A program több táblát használ. Külön tároljuk az autókat a tulajdonosoktól. Így egy tulajnak lehet több autója is. Az autók adatait is elkülönítve tároljuk a hatékonyabb tárolás végett. A programban megjelent a szerelők tábla, hogy nyomon tudjuk követni min ki dolgozott. És a program lelke a repair tábla
    itt tartjuk számon a javításokat. a séma a következő.
+   ![Séma-Tervezet](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/adatbazis_sema.png)
+   
