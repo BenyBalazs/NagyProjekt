@@ -110,3 +110,9 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    
    # 13 Implementációs terv
    A tervezés folyamán egy grafikus megjelenítési formát célszerű használni jelen esetben ez az UML az úgynevezett Unified Modeling Language osztálydiagrammjai lesznek. Célszerű használni továbbá a Rendszerhasználati esetek alatt található use case diagrammokat is.
+   
+   ### 13.1. Perzisztencia-osztályok:
+   
+   Az adatbáziskezelésben a perzisztenciát a java nyelvhez készített hybernate programkönyvtárat használjuk amit a Maven plugin importálásával adunk hozzá a programhoz. Perzisztencia osztályok: 
+   - DBUtils
+   - HibernateUtils
