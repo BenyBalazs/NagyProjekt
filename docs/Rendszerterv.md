@@ -108,3 +108,5 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    itt tartjuk számon a javításokat. a séma a következő.
    ![Séma-Tervezet](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/adatbazis_sema.png)
    
+   # 13 Implementációs terv
+   A tervezés folyamán egy grafikus megjelenítési formát célszerű használni jelen esetben ez az UML az úgynevezett Unified Modeling Language osztálydiagrammjai lesznek. Célszerű használni továbbá a Rendszerhasználati esetek alatt található use case diagrammokat is.
