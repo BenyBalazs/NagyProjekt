@@ -1,5 +1,11 @@
 # Rendszerterv
 
+### 1. Bevezetés
+
+A rendszerterv elkészítésének a célja, hogy a program fejlesztői részére pontos, átfogó, részletes leírást adjon a rendszerrel kapcsolatos összes fontos szakmai kérdést illetően. A továbbfejlesztett program egy kisvárosi autószerelőműhely mindennapi működését kívánja segíteni. A tervezők célja, hogy lecseréljék az eddigi papír alapú szervíz nyílvántartást, melyet a project elkészülte után kizárólag elektronikusan az alkalmazáson keresztül kívánnak vezetni. Ez az újítás nagyban elősegíti majd az alkalmazottak (autószerelők) munkáját, illetve hozzájárul a munkafolyamatok meggyorsításához is.
+Célplatformunk cégünk, valamint munkatársank tulajdonában álló számítógépek valamint laptopok, melyek Windows 10 operációs rendszert használnak.
+A digitalizálás hatására reményeink szerint sokkal átláthatóbb, könnyedén kezelhető alkalmazást kapunk, melyet munkatársaink előszeretettel használnak majd munkájuk során.
+
 ### 2. A rendszer célja
 
 A rendszer célja, hogy az autószerelő műhely egy korábbi szoftver verzióját továbbfejlessze. Ezáltal egy sokkal modernebb, fejlettebb, és funkciókban gazdagabb alkalmazás lesz, mely nagyban elősegíti a dolgozók munkáját. Ennek köszönhetően új lehetőségek nyílnak meg a dolgozók előtt és hatékonyabban tud működni a műhely.
@@ -21,6 +27,33 @@ A projektet készítő három személy teljesen egyenjogú szerepkörökkel rend
 | Benyovszki Balázs Zoltán  | szoftverfejlesztő |
 | Csontos Róbert  | szoftverfejlesztő |
 | Kis Patrik    | szoftverfejlesztő |
+
+### 4. Ütemterv
+
+#### 4.1 Mérföldkövek
+
+A program elkészítésének főbb mérföldkövei:
+
+##### 4.1.1 Sprint I.
+
+- Trello regisztráció, ismerkedés a trello környezetével.
+- Git repository elkészítése
+- Fejlesztésben résztvevő tagok gitre történő regisztrációja, valamint projecthez való felvételük
+- Követelményspecifikáció elkészítése
+- Rendszerterv elkészítése
+- Program prototípusának elékszítése
+
+##### 4.1.2 Sprint II.
+
+- Rendszer tesztjének felállítása
+- Program adatbázisának elkészítése
+- Program kontrollerének megírása
+- Program tesztelése minimális funkciókkal
+
+##### 4.1.3 További sprintek
+
+- Program biztonságának növelése, felkészítése az éles használatra
+
 
 ### 5. Üzleti szereplők
 
@@ -45,6 +78,21 @@ A programot az éppen használó szerelő és adminisztrációs munkatárs. A sz
 
 - Egyszerű, könnyen kezelhető felhasználói felület
 - Optimalizált betűméretek, színek és típusok
+
+### 7. Funkcionális terv
+
+Az alkalmazás célja, az autószerelő műhelyben zajló adminisztrációs folyamatok megkönnyítése. A jelenleg használt papír alapú javításnapló teljes lecserélése, teljes mértékben elektronikus formátumra. Terveink szerint a korábbi alkalmazásunk (kis project) elemei teljes mértékben integrálásra kerülnek, többek közt:
+
+- új autó felvétele
+- autó állapotának módosítása
+- átvételre váró autók (kész autók.)
+
+### 8. Rendszerszereplők
+
+A rendszerben mindösszesen egy csoport szerepel, az autószerelők csoportja. 
+
+Az alkalmazást az autószerelők csoportja fogja használni, mindennapi munkájuk folyamán. 
+
 
 ### 9. Rendszerhasználati esetek és lefutásai
 
@@ -73,6 +121,21 @@ Az alacsony rendszerigény a következő:
 - megjelenítő
 
 A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a Java platformfüggetlen megvalósítása miatt a program képes futni a Java 15-el kompatibilis Linux rendszereken is.
+
+### 10. Fejlesztő eszközök
+
+   A project során használt fejlesztői eszközök:
+   
+   - Java 15
+   - Maven 3
+   - MySQL
+   - JavaFx
+
+### 11. Keretrendszer
+
+   - Entity
+   - Spring Boot
+   - Afterburner.fx
 
 ### 12. Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
