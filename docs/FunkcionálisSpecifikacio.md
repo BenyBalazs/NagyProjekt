@@ -30,6 +30,14 @@ Cégünk telephelye Debrecentől 15 km-re található, egy kisebb városban. Miv
    **Javítás alatt**: Itt azokat az autókat lehet szerkeszteni amelyek jelenleg javítása alatt vannak vagy még nincs befejezve a javítás, de már dolgozott rajta valaki vagy akoz amelyekkel még sajnos nem tudtunk foglalkozni.
    **Összesítő**: Itt a végelszámolás kerül kiírásra a már elkészült illetve kifizetett javítások.
 
+### 5. Igényelt üzleti folyamatok:
+
+Programunk alapvetően három menüt jelenít meg, ezen menük: új autó, szerelés alatt (legörüldő menüsoron keresztül ki tudjuk választani az éppen aktuális munkafolyamatot.), valamint a kész autók.
+
+A folyamatok közül, mindegyik kiemelt jelentőséggel bíró, ezért ezeket a menüsort rögtön az alkalmazás indítása után grafikus felületen megjelenítjük a felhasználó számára, ezáltal a program használata egyszerű, és felhasználóbarát lesz.
+
+Az új autó menühöz kapcsolódó táblában fogjuk tárolni az autónak, valamint a tulajdonosának adatait, a szerelés alatt menühöz kapcsolodó táblában tároljuk majd a különböző munkafolyamatokat (szerelésre vár,szerelés alatt, átvételre kész), míg a kész autók menühöz tartozó táblában a fizetési állapotra vonatkozó adatokat tároljuk el (pl: kifizetve, átvételre kész stb..)
+
 ### 6. Képernyőtervek
 
 A cél, hogy a javafx felhasználásaval minnél egyszerűbb és letisztultabb felhasználói felület kerüljön elkészítésre. A program alapját egy megjelenítési panel fogja alkotni ahol lehetséges lesz majd az egyes menüpontok között váltva különböző feladatokat elvégezni.
