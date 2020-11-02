@@ -32,3 +32,9 @@
  * Az esetlegesen felhasznált külső forrásokat szükséges megjelölni.
  * A képek melyek felhasználásra kerülnek jpeg és png formátumúak legyenek.
 
+### 6. Követelménylista
+
+ * A rendszer legyen képes az autók mellett a szerelők nyílvántartására is.
+ * A rendszer legyen képes részletes adattárolásra (egy tulajdonoshoz több autót is hozzá leheessen rendelni.)
+ * Legyünk képesek külön külön szerkeszteni az ilyen jellegű autókat (melyek egy tulajdonoshoz vannak rendelve.)
+ * A programunk továbbfejlesztett verziója is, egyszerű, letisztult, könnyedén kezelhető, felhasználóbarát felülettel rendelkezzen.
