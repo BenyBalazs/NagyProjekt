@@ -79,6 +79,21 @@ A programot az éppen használó szerelő és adminisztrációs munkatárs. A sz
 - Egyszerű, könnyen kezelhető felhasználói felület
 - Optimalizált betűméretek, színek és típusok
 
+### 7. Funkcionális terv
+
+Az alkalmazás célja, az autószerelő műhelyben zajló adminisztrációs folyamatok megkönnyítése. A jelenleg használt papír alapú javításnapló teljes lecserélése, teljes mértékben elektronikus formátumra. Terveink szerint a korábbi alkalmazásunk (kis project) elemei teljes mértékben integrálásra kerülnek, többek közt:
+
+- új autó felvétele
+- autó állapotának módosítása
+- átvételre váró autók (kész autók.)
+
+### 8. Rendszerszereplők
+
+A rendszerben mindösszesen egy csoport szerepel, az autószerelők csoportja. 
+
+Az alkalmazást az autószerelők csoportja fogja használni, mindennapi munkájuk folyamán. 
+
+
 ### 9. Rendszerhasználati esetek és lefutásai
 
 Tulaj és autó hozzáadása a rendszerhez:
@@ -92,14 +107,6 @@ Szerelő hozzáadása a rendszerhez:
 
 Törlés a rendszerből:
 ![Törlés a rendszerből](https://raw.githubusercontent.com/BenyBalazs/NagyProjekt/master/docs/kepek/torles.png)
-
-### 7. Funkcionális terv
-
-Az alkalmazás célja, az autószerelő műhelyben zajló adminisztrációs folyamatok megkönnyítése. A jelenleg használt papír alapú javításnapló teljes lecserélése, teljes mértékben elektronikus formátumra. Terveink szerint a korábbi alkalmazásunk (kis project) elemei teljes mértékben integrálásra kerülnek, többek közt:
-
-- új autó felvétele
-- autó állapotának módosítása
-- átvételre váró autók (kész autók.)
 
 #### 9.1 Hardver és hálózati topológia:
 A számítógépnek amin ezt a szoftvert használni kívánják el kell érnie a MySQL adatbázist ami lehet lokális is, de internetre telepített is, ezért javasolt az internetelérés biztosítása azon a számítógépen melyen a szoftvert használni kívánják.
