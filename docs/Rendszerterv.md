@@ -28,6 +28,33 @@ A projektet készítő három személy teljesen egyenjogú szerepkörökkel rend
 | Csontos Róbert  | szoftverfejlesztő |
 | Kis Patrik    | szoftverfejlesztő |
 
+### 4. Ütemterv
+
+#### 4.1 Mérföldkövek
+
+A program elkészítésének főbb mérföldkövei:
+
+##### 4.1.1 Sprint I.
+
+- Trello regisztráció, ismerkedés a trello környezetével.
+- Git repository elkészítése
+- Fejlesztésben résztvevő tagok gitre történő regisztrációja, valamint projecthez való felvételük
+- Követelményspecifikáció elkészítése
+- Rendszerterv elkészítése
+- Program prototípusának elékszítése
+
+##### 4.1.2 Sprint II.
+
+- Rendszer tesztjének felállítása
+- Program adatbázisának elkészítése
+- Program kontrollerének megírása
+- Program tesztelése minimális funkciókkal
+
+##### 4.1.3 További sprintek
+
+- Program biztonságának növelése, felkészítése az éles használatra
+
+
 ### 5. Üzleti szereplők
 
 A programot az éppen használó szerelő és adminisztrációs munkatárs. A szerelő műhely összes alkalmazottjának megvan a végzettsége és a tudása ahhoz, hogy a programot magabiztosan képes legyen használni. Az új munkatársak pedig betanításon esnek át, mielőtt használatba vennék az alkalmazást.
