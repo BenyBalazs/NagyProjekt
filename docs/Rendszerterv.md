@@ -131,6 +131,12 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    - MySQL
    - JavaFx
 
+### 11. Keretrendszer
+
+   - Entity
+   - Spring Boot
+   - Afterburner.fx
+
 ### 12. Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
