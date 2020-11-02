@@ -122,6 +122,15 @@ Az alacsony rendszerigény a következő:
 
 A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a Java platformfüggetlen megvalósítása miatt a program képes futni a Java 15-el kompatibilis Linux rendszereken is.
 
+### 10. Fejlesztő eszközök
+
+   A project során használt fejlesztői eszközök:
+   
+   - Java 15
+   - Maven 3
+   - MySQL
+   - JavaFx
+
 ### 12. Archtekturális terv
    A rendszert felépítő szoftverkomponensek, a Java , Maven, Sql (mysql). Ezen szoftverkomponensek Java FX keretén belül kerülnek használatra.
    Az alrendszerek definiálása után, tulajdonságaikat felhasználva vezérlési és kommunikációs folyamatokat lehet létrehozni. A rendszer szerepe 
