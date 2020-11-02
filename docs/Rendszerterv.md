@@ -1,5 +1,11 @@
 # Rendszerterv
 
+### 1. Bevezetés
+
+A rendszerterv elkészítésének a célja, hogy a program fejlesztői részére pontos, átfogó, részletes leírást adjon a rendszerrel kapcsolatos összes fontos szakmai kérdést illetően. A továbbfejlesztett program egy kisvárosi autószerelőműhely mindennapi működését kívánja segíteni. A tervezők célja, hogy lecseréljék az eddigi papír alapú szervíz nyílvántartást, melyet a project elkészülte után kizárólag elektronikusan az alkalmazáson keresztül kívánnak vezetni. Ez az újítás nagyban elősegíti majd az alkalmazottak (autószerelők) munkáját, illetve hozzájárul a munkafolyamatok meggyorsításához is.
+Célplatformunk cégünk, valamint munkatársank tulajdonában álló számítógépek valamint laptopok, melyek Windows 10 operációs rendszert használnak.
+A digitalizálás hatására reményeink szerint sokkal átláthatóbb, könnyedén kezelhető alkalmazást kapunk, melyet munkatársaink előszeretettel használnak majd munkájuk során.
+
 ### 2. A rendszer célja
 
 A rendszer célja, hogy az autószerelő műhely egy korábbi szoftver verzióját továbbfejlessze. Ezáltal egy sokkal modernebb, fejlettebb, és funkciókban gazdagabb alkalmazás lesz, mely nagyban elősegíti a dolgozók munkáját. Ennek köszönhetően új lehetőségek nyílnak meg a dolgozók előtt és hatékonyabban tud működni a műhely.

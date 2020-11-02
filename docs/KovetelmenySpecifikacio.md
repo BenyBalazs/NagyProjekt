@@ -25,3 +25,16 @@
  * Legyen kivitelezhető, hogy egy tulajdonoshoz több autót is hozzá lehessen rendelni, és az autókat külön kezelni.
  * A munka végeztével legyen lehetőség számla készítésére, mely tartalmazza a javítási költségeket.
  * A számla tartalmazza a végösszeget áfával a cég adatait valamint az ügyfél adatait.
+
+### 5. A rendszerre vonatkozó szabályok
+
+ * A továbbfejlesztett alkalmazás az alap verzióhoz hasonlóan szabványos java elemek felhasználásával készüljön: JavaFX, Maven.
+ * Az esetlegesen felhasznált külső forrásokat szükséges megjelölni.
+ * A képek melyek felhasználásra kerülnek jpeg és png formátumúak legyenek.
+
+ ### 6. Követelménylista
+
+ * A rendszer legyen képes az autók mellett a szerelők nyílvántartására is.
+ * A rendszer legyen képes részletes adattárolásra (egy tulajdonoshoz több autót is hozzá leheessen rendelni.)
+ * Legyünk képesek külön külön szerkeszteni az ilyen jellegű autókat (melyek egy tulajdonoshoz vannak rendelve.)
+ * A programunk továbbfejlesztett verziója is, egyszerű, letisztult, könnyedén kezelhető, felhasználóbarát felülettel rendelkezzen.
