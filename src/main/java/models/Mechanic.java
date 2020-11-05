@@ -16,5 +16,15 @@ import java.util.Set;
 @Builder
 public class Mechanic {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Setter(AccessLevel.PRIVATE)
+    @Column(name = "MECHANIC_ID")
+    Integer mechanicId;
+    String name;
+    String email;
+    String phoneNum;
+    LocalDate dateOfBirth;
+
 
 }
