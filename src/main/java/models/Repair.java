@@ -33,5 +33,7 @@ public class Repair {
     Integer price;
     @Column(name = "DESCRIPTION")
     String description;
+    @ManyToMany(mappedBy = "repairs")
+    private List<Mechanic> mechanics = new ArrayList<Mechanic>();
 
 }
