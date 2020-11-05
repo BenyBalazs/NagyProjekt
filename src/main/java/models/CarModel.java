@@ -21,4 +21,13 @@ public class CarModel {
     String type;
     @OneToMany(mappedBy = "model")
     List<Car> cars = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "CarModel{" +
+                "carModelId=" + carModelId +
+                ", brand='" + brand + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
