@@ -1,16 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewOwnerController">
-    <children>
-        <Label text="Secondary View" />
-        <Button fx:id="secondaryButton" text="Switch to Primary View" onAction="#switchToPrimary" />
-    </children>
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-</VBox>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewOwnerController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="600.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" onMouseClicked="#existingOwner">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <Label text="Meglévő tulaj kiválasztásza">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="ownerList" prefHeight="26.0" prefWidth="242.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="600.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" onMouseClicked="#newOwner">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <Label prefHeight="21.0" prefWidth="92.0" text="Új tulaj">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <GridPane prefHeight="182.0" prefWidth="579.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.20001220703125" minWidth="10.0" prefWidth="150.79998779296875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="449.20001220703125" minWidth="10.0" prefWidth="429.20001220703125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox prefHeight="98.0" prefWidth="290.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="281.0" text="Név">
+                           <VBox.margin>
+                              <Insets right="5.0" top="3.0" />
+                           </VBox.margin></Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="281.0" text="Cím">
+                           <VBox.margin>
+                              <Insets right="5.0" top="18.0" />
+                           </VBox.margin></Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="281.0" text="Telefon">
+                           <VBox.margin>
+                              <Insets right="5.0" top="18.0" />
+                           </VBox.margin></Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="281.0" text="Email">
+                           <VBox.margin>
+                              <Insets right="5.0" top="18.0" />
+                           </VBox.margin></Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="281.0" text="Születési dátum">
+                           <VBox.margin>
+                              <Insets right="5.0" top="18.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <TextField fx:id="name" />
+                        <TextField fx:id="address">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></TextField>
+                        <TextField fx:id="phoneNumber">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></TextField>
+                        <TextField fx:id="email">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></TextField>
+                        <DatePicker fx:id="birthDate" prefHeight="26.0" prefWidth="246.0">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </DatePicker>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <AnchorPane prefHeight="44.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#next" text="Következő" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
