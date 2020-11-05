@@ -30,7 +30,7 @@ public class MenuController {
 
     @FXML
     void ownerAndCar(MouseEvent event) {
-        loadUi("ownerAndCar");
+        loadUi("carsAndOwners");
     }
 
     @FXML
