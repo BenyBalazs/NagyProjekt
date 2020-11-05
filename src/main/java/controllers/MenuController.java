@@ -3,7 +3,7 @@ package controllers;
 import java.io.IOException;
 import javafx.fxml.FXML;
 
-public class PrimaryController {
+public class MenuController {
 
     @FXML
     private void switchToSecondary() throws IOException {
