@@ -25,4 +25,16 @@ public class CarOwner {
     String phoneNum;
     @OneToMany(mappedBy = "owner")
     List<Car> ownedCars = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "CarOwner{" +
+                "carModelId=" + carModelId +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", email='" + email + '\'' +
+                ", phoneNum='" + phoneNum + '\'' +
+                '}';
+    }
 }
