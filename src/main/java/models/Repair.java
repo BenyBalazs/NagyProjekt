@@ -36,4 +36,16 @@ public class Repair {
     @ManyToMany(mappedBy = "repairs")
     private List<Mechanic> mechanics = new ArrayList<Mechanic>();
 
+    @Override
+    public String toString() {
+        return "Repair{" +
+                "repairId=" + repairId +
+                ", carOnRepair=" + carOnRepair +
+                ", startOfRepair=" + startOfRepair +
+                ", endOfRepair=" + endOfRepair +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", mechanics=" + mechanics +
+                '}';
+    }
 }
