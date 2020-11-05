@@ -24,20 +24,7 @@ public class MenuController {
 
     @FXML
     void newRecord(MouseEvent event) {
-        try {
-            Parent part = FXMLLoader.load(App.class.getResource("newOwner.fxml"));
-            Stage stage = new Stage();
-            Scene scene = new Scene(part);
-            stage.setScene(scene);
-            stage.setTitle("Tulaj adatai");
-            stage.setResizable(false);
-            stage.sizeToScene();
-            stage.initModality(Modality.WINDOW_MODAL);
-            stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
-            stage.show();
-        } catch (IOException ex) {
-            logger.error("A hiba forrása {}", ex.toString());
-        }
+        loadUiNewWindow("newOwner", "Tulaj adatai");
     }
 
     @FXML
@@ -63,6 +50,24 @@ public class MenuController {
             logger.error("A hiba forrása {}", ex.toString());
         }
         borderPane.setCenter(root);
+    }
+
+    private void loadUiNewWindow(String ui, String title){
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource(ui + ".fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle(title);
+            stage.setResizable(false);
+            stage.sizeToScene();
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
+            stage.show();
+        } catch (IOException ex) {
+            logger.error("A hiba forrása {}", ex.toString());
+        }
     }
 
 }
