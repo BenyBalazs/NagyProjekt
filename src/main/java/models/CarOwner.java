@@ -15,5 +15,13 @@ import java.time.LocalDate;
 @Builder
 public class CarOwner {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Setter(AccessLevel.PRIVATE)
+    Integer carModelId;
+    String name;
+    String address;
+    LocalDate dateOfBirth;
+    String email;
+    String phoneNum;
 }
