@@ -8,5 +8,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDate;
 
-public class CarOwner{
+@Data
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class CarOwner {
+
+
 }
