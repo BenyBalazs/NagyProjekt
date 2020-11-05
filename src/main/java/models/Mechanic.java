@@ -31,4 +31,15 @@ public class Mechanic {
             inverseJoinColumns = @JoinColumn(name = "MECHANIC_ID"))
     private List<Repair> repairs = new ArrayList<Repair>();
 
+    @Override
+    public String toString() {
+        return "Mechanic{" +
+                "mechanicId=" + mechanicId +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNum='" + phoneNum + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", repairs="  +
+                '}';
+    }
 }
