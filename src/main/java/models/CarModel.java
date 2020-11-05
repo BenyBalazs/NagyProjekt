@@ -14,5 +14,10 @@ import javax.persistence.Id;
 @Builder
 public class CarModel {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Setter(AccessLevel.PRIVATE)
+    Integer carModelId;
+    String brand;
+    String type;
 }
