@@ -2,10 +2,9 @@ package models;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -20,4 +19,6 @@ public class CarModel {
     Integer carModelId;
     String brand;
     String type;
+    @OneToMany(mappedBy = "model")
+    List<Car> cars = new ArrayList<>();
 }
