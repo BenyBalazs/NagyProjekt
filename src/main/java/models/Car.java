@@ -13,4 +13,16 @@ import java.time.LocalDate;
 @Builder
 public class Car {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Setter(AccessLevel.PRIVATE)
+    Integer carId;
+    @ManyToOne
+    @JoinColumn(name = "OWNER_FK")
+    CarOwner owner;
+    String licensePlate;
+    @ManyToOne
+    @JoinColumn(name = "MODEL_FK")
+    CarModel model;
+    LocalDate manufacturedDate;
 }
