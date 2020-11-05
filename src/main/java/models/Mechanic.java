@@ -25,6 +25,10 @@ public class Mechanic {
     String email;
     String phoneNum;
     LocalDate dateOfBirth;
-
+    @ManyToMany
+    @JoinTable(name = "REPAIRS",
+            joinColumns = @JoinColumn(name = "REPAIR_ID"),
+            inverseJoinColumns = @JoinColumn(name = "MECHANIC_ID"))
+    private List<Repair> repairs = new ArrayList<Repair>();
 
 }
