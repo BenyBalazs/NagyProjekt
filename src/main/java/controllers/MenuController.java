@@ -29,7 +29,7 @@ public class MenuController {
 
     @FXML
     void newWorker(MouseEvent event) {
-
+        loadUiNewWindow("newWorker", "Új munkatárs adatai");
     }
 
     @FXML
