@@ -7,11 +7,6 @@ import javafx.scene.input.MouseEvent;
 public class MenuController {
 
     @FXML
-    void car(MouseEvent event) {
-
-    }
-
-    @FXML
     void newRecord(MouseEvent event) {
 
     }
@@ -22,7 +17,7 @@ public class MenuController {
     }
 
     @FXML
-    void owner(MouseEvent event) {
+    void ownerAndCar(MouseEvent event) {
 
     }
 
