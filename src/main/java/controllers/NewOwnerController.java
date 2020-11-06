@@ -38,7 +38,8 @@ public class NewOwnerController {
 
     @FXML
     void next(MouseEvent event) {
-
+        WizardController.changeScene("newCar", "Új autó adatai");
+        WizardController.showStage();
     }
 
 }
