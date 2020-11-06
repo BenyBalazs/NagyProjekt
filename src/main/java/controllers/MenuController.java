@@ -24,7 +24,8 @@ public class MenuController {
 
     @FXML
     void newRecord(MouseEvent event) {
-        loadUiNewWindow("newOwner", "Tulaj adatai");
+        WizardController.createStage("newOwner","Tulaj adatai");
+        WizardController.showStage();
     }
 
     @FXML
