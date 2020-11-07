@@ -40,7 +40,7 @@ public class Repair {
     public String toString() {
         return "Repair{" +
                 "repairId=" + repairId +
-                ", carOnRepair=" + carOnRepair +
+                ", carOnRepair=" + carOnRepair.toString() +
                 ", startOfRepair=" + startOfRepair +
                 ", endOfRepair=" + endOfRepair +
                 ", price=" + price +

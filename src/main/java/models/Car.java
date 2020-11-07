@@ -5,6 +5,8 @@ import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -25,4 +27,8 @@ public class Car {
     @JoinColumn(name = "MODEL_FK")
     CarModel model;
     LocalDate manufacturedDate;
+    @OneToMany(mappedBy = "carOnRepair")
+    List<Repair> repairs = new ArrayList<>();
+
+
 }

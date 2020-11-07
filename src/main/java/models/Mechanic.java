@@ -39,7 +39,6 @@ public class Mechanic {
                 ", email='" + email + '\'' +
                 ", phoneNum='" + phoneNum + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
-                ", repairs="  +
                 '}';
     }
 }
