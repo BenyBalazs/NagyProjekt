@@ -18,10 +18,20 @@ import java.util.Set;
 public class Repair {
 
     public static enum RepairState{
-        UNDER_REPAIR,
-        FINISHED,
-        PAID;
+        UNDER_REPAIR("Szerelés alatt."),
+        FINISHED("Elkészült"),
+        PAID("Fizetve");
 
+        private final String value;
+
+        RepairState(final String value){
+            this.value = value;
+        }
+
+        @Override
+        public String toString() {
+            return "value";
+        }
     }
 
     @Id
