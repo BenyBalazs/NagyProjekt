@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 public class EmfHelper {
 
-    private EmfHelper(){};
+    private EmfHelper(){}
 
     private final static EntityManagerFactory emf = Persistence.createEntityManagerFactory("Cars");
 
