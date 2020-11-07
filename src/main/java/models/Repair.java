@@ -4,6 +4,7 @@ import lombok.*;
 import org.hibernate.annotations.Check;
 
 import javax.persistence.*;
+import javax.swing.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -48,6 +49,10 @@ public class Repair {
     LocalDate endOfRepair;
     @Column(name = "PRICE")
     Integer price;
+    @Column(name = "SHORT_DESCRIPTION")
+    String shortDescription;
+    @Column(name = "REPAIR_STATE")
+    RepairState repairState;
     @Column(name = "DESCRIPTION")
     String description;
     @ManyToMany(mappedBy = "repairs")
