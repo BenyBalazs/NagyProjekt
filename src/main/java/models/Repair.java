@@ -22,7 +22,7 @@ public class Repair {
     @Column(name = "REPAIR_ID")
     @Setter(AccessLevel.PRIVATE)
     Integer repairId;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CAR_FK")
     Car carOnRepair;
     @Column(name = "START_OF_REPAIR")
