@@ -17,7 +17,7 @@ import java.util.List;
 abstract class GenericRepository<T> {
 
     private static final Logger logger = LoggerFactory.getLogger("MenuController.class");
-    private Class<T> entityClass;
+    private final Class<T> entityClass;
 
     public GenericRepository(){
         this.entityClass = ((Class) ((ParameterizedType) getClass()
