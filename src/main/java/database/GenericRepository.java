@@ -32,15 +32,17 @@ public abstract class GenericRepository<T> {
         }
     }
 
-    public void simpleDelete(T entity){
+    public boolean simpleDelete(T entity){
         EntityManager em = EmfHelper.getEntityManager();
         try{
             em.getTransaction().begin();
             em.remove(em.contains(entity) ? entity : em.merge(entity));
             em.getTransaction().commit();
             logger.trace("A szimpla törlés sikeresen megtörtént.");
+            return true;
         }catch (Exception e){
             logger.error("Hiba történt az entitás törlése közben: {}", e.toString());
+            return false;
         }finally {
             em.close();
         }
@@ -74,7 +76,7 @@ public abstract class GenericRepository<T> {
             Query q = em.createQuery(cq);
             return q.getResultList();
         }catch (Exception e){
-            logger.error("");
+            logger.error("Hiba minden megtalálás közben.");
         }finally {
             em.close();
         }
