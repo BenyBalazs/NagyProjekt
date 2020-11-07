@@ -51,6 +51,7 @@ public class MenuController {
             logger.error("A hiba forrása {}", ex.toString());
         }
         borderPane.setCenter(root);
+        logger.trace("Sikeres betöltés.");
     }
 
     private void loadUiNewWindow(String ui, String title){
