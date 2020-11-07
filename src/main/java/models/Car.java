@@ -30,5 +30,14 @@ public class Car {
     @OneToMany(mappedBy = "carOnRepair")
     List<Repair> repairs = new ArrayList<>();
 
-
+    @Override
+    public String toString() {
+        return "Car{" +
+                "carId=" + carId +
+                ", owner=" + owner +
+                ", licensePlate='" + licensePlate + '\'' +
+                ", model=" + model +
+                ", manufacturedDate=" + manufacturedDate +
+                '}';
+    }
 }
