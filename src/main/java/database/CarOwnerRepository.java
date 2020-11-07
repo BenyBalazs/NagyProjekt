@@ -1,4 +1,9 @@
 package database;
 
-class CarOwnerRepository {
+import models.CarOwner;
+
+import javax.transaction.Transactional;
+
+@Transactional
+class CarOwnerRepository extends GenericRepository<CarOwner> {
 }
