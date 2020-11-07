@@ -1,4 +1,9 @@
 package database;
 
-class MechanicRepository {
+import models.Mechanic;
+
+import javax.transaction.Transactional;
+
+@Transactional
+class MechanicRepository extends GenericRepository<Mechanic>{
 }
