@@ -1,5 +1,6 @@
 package controllers;
 
+import database.Repositories;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
@@ -18,7 +19,7 @@ public class CarsAndOwnersController {
 
     @FXML
     void searchOwner(MouseEvent event) {
-
+        Repositories.repairRepository.findAll();
     }
 
 }

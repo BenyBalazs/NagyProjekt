@@ -10,6 +10,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
+import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 @Transactional
@@ -17,6 +18,11 @@ abstract class GenericRepository<T> {
 
     private static final Logger logger = LoggerFactory.getLogger("MenuController.class");
     private Class<T> entityClass;
+
+    public GenericRepository(){
+        this.entityClass = ((Class) ((ParameterizedType) getClass()
+                .getGenericSuperclass()).getActualTypeArguments()[0]);
+    }
 
     public void createNew(T entity){
         EntityManager em = EmfHelper.getEntityManager();

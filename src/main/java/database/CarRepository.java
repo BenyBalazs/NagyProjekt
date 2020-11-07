@@ -5,5 +5,5 @@ import models.Car;
 import javax.transaction.Transactional;
 
 @Transactional
-class CarRepository extends GenericRepository<Car>{
+public class CarRepository extends GenericRepository<Car>{
 }

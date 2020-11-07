@@ -5,5 +5,5 @@ import models.Repair;
 import javax.transaction.Transactional;
 
 @Transactional
-class RepairRepository extends GenericRepository<Repair> {
+public class RepairRepository extends GenericRepository<Repair> {
 }
