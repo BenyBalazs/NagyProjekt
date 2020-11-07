@@ -38,4 +38,18 @@ public abstract class GenericRepository<T> {
             em.close();
         }
     }
+
+    public void commitChange(T entity){
+        EntityManager em = EmfHelper.getEntityManager();
+        try{
+            em.getTransaction().begin();
+            em.merge(entity);
+            em.getTransaction().commit();
+            logger.trace("A frissítás sikeresen megtörtént.");
+        }catch (Exception e){
+            logger.error("Hiba történt az entitás frissítése közben: {}", e.toString());
+        }finally {
+            em.close();
+        }
+    }
 }
