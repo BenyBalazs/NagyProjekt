@@ -17,6 +17,13 @@ import java.util.Set;
 @Builder
 public class Repair {
 
+    public static enum RepairState{
+        UNDER_REPAIR,
+        FINISHED,
+        PAID;
+
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "REPAIR_ID")
