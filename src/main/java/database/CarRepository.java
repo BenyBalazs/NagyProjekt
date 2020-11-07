@@ -2,5 +2,5 @@ package database;
 
 import models.Car;
 
-public class CarRepository{
+class CarRepository extends GenericRepository<Car>{
 }

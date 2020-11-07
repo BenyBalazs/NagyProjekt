@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Transactional
-public abstract class GenericRepository<T> {
+abstract class GenericRepository<T> {
 
     private static final Logger logger = LoggerFactory.getLogger("MenuController.class");
     private Class<T> entityClass;
