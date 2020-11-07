@@ -4,12 +4,19 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
+import java.util.ArrayList;
+import java.util.List;
 
 @Transactional
 public abstract class GenericRepository<T> {
 
     private static final Logger logger = LoggerFactory.getLogger("MenuController.class");
+    private Class<T> entityClass;
 
     public void createNew(T entity){
         EntityManager em = EmfHelper.getEntityManager();
@@ -51,5 +58,26 @@ public abstract class GenericRepository<T> {
         }finally {
             em.close();
         }
+    }
+
+    public List<T> findAll(){
+        EntityManager em = EmfHelper.getEntityManager();
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+
+        CriteriaQuery<T> cq = cb.createQuery(entityClass);
+
+        Root<T> from = cq.from(entityClass);
+
+        cq.select(from);
+
+        try{
+            Query q = em.createQuery(cq);
+            return q.getResultList();
+        }catch (Exception e){
+            logger.error("");
+        }finally {
+            em.close();
+        }
+        return new ArrayList<T>();
     }
 }
