@@ -1,8 +1,10 @@
 package database;
 
-public final class Repositories {
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
-    private Repositories(){}
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public final class Repositories {
 
     public static final CarRepository carRepository = new CarRepository();
     public static final CarModelRepository carModelRepository = new CarModelRepository();
