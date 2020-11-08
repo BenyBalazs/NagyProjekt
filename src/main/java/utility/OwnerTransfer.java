@@ -1,4 +1,11 @@
 package utility;
 
-public class OwnerTransfer {
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+import models.CarOwner;
+
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public final class OwnerTransfer {
+    public static CarOwner ownerTransfer = new CarOwner();
+
 }
