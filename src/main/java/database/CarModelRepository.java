@@ -14,6 +14,8 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Transactional
 @NoArgsConstructor(access = AccessLevel.PACKAGE)
@@ -50,5 +52,12 @@ public class CarModelRepository extends GenericRepository<CarModel> {
             em.close();
         }
         return null;
+    }
+
+    public List<String> getEveryBrandAsStringList(){
+        return Repositories.carModelRepository.findAll().stream().map(CarModel::getBrand).collect(Collectors.toList());
+    }
+    public List<String> getEveryTypeAsStringList(){
+        return Repositories.carModelRepository.findAll().stream().map(CarModel::getType).collect(Collectors.toList());
     }
 }
