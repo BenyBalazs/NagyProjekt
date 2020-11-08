@@ -15,7 +15,9 @@ public class EmfHelper {
     }
 
     public static void closeEmf(){
-        if(emf.isOpen())
             emf.close();
+    }
+    public static void openEmf(){
+        emf.isOpen();
     }
 }

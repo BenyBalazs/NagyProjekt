@@ -1,6 +1,7 @@
 package controllers;
 
 
+import database.EmfHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,6 +19,11 @@ import java.io.IOException;
 public class MenuController {
 
     private static Logger logger = LoggerFactory.getLogger("MenuController.class");
+
+    @FXML
+    public void initialize(){
+        new Thread(EmfHelper::openEmf).start();
+    }
 
     @FXML
     private BorderPane borderPane;
