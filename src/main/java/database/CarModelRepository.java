@@ -10,13 +10,12 @@ import javax.transaction.Transactional;
 @NoArgsConstructor(access = AccessLevel.PACKAGE)
 public class CarModelRepository extends GenericRepository<CarModel> {
 
-    public void deleteAndSetConnectionToNull(CarModel entity){
-        for(Car a : entity.getCars()){
-           try {
-               a.setModel(null);
-               Repositories.carRepository.commitChange(a);
-           }catch (Exception e) {System.out.println("Üres Lisa");}
-
+    public void deleteAndSetConnectionToNull(CarModel entity) {
+        if (!entity.getCars().isEmpty()) {
+            for (Car a : entity.getCars()) {
+                a.setModel(null);
+                Repositories.carRepository.commitChange(a);
+            }
         }
         Repositories.carModelRepository.simpleDelete(entity);
     }
