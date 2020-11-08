@@ -27,7 +27,7 @@
          <children>
             <HBox prefHeight="46.0" prefWidth="600.0">
                <children>
-                  <RadioButton mnemonicParsing="false" onMouseClicked="#existingOwner">
+                  <RadioButton fx:id="eowner" mnemonicParsing="false" onMouseClicked="#existingOwner">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -52,7 +52,7 @@
             </HBox>
             <HBox prefHeight="39.0" prefWidth="600.0">
                <children>
-                  <RadioButton mnemonicParsing="false" onMouseClicked="#newOwner">
+                  <RadioButton fx:id="nowner" mnemonicParsing="false" onMouseClicked="#newOwner">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>

@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utility.OwnerTransfer;
 
 import java.io.IOException;
 
@@ -28,7 +29,9 @@ public class WizardController {
             stage.sizeToScene();
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
-            stage.setOnCloseRequest((windowEvent) -> { stage = new Stage(); root = new BorderPane();});
+            stage.setOnCloseRequest((windowEvent) -> { stage = new Stage(); root = new BorderPane();
+                OwnerTransfer.ownerTransfer = null;
+            });
         } catch (IOException ex) {
             logger.error("A hiba forrása {}", ex.toString());
         }
@@ -38,7 +41,9 @@ public class WizardController {
         try {
             root.setCenter(FXMLLoader.load(WizardController.class.getResource(ui + ".fxml")));
             stage.setTitle(title);
-            stage.setOnCloseRequest((windowEvent) -> { stage = new Stage(); root = new BorderPane();});
+            stage.setOnCloseRequest((windowEvent) -> { stage = new Stage(); root = new BorderPane();
+            OwnerTransfer.ownerTransfer = null;
+            });
         } catch (IOException ex) {
             logger.error("A hiba forrása {}", ex.toString());
         }
