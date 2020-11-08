@@ -49,8 +49,6 @@ public class Repair {
     LocalDate endOfRepair;
     @Column(name = "PRICE")
     Integer price;
-    @Column(name = "SHORT_DESCRIPTION")
-    String shortDescription;
     @Column(name = "REPAIR_STATE")
     RepairState repairState;
     @Column(name = "DESCRIPTION")
