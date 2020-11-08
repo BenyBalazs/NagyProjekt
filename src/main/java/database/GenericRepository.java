@@ -16,7 +16,7 @@ import java.util.List;
 @Transactional
 abstract class GenericRepository<T> {
 
-    private static final Logger logger = LoggerFactory.getLogger("MenuController.class");
+    private static final Logger logger = LoggerFactory.getLogger("GenericRepository<T>.class");
     private final Class<T> entityClass;
 
     public GenericRepository(){
