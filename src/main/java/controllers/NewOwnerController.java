@@ -28,12 +28,22 @@ public class NewOwnerController {
 
     @FXML
     void existingOwner(MouseEvent event) {
-
+        email.setDisable(true);
+        name.setDisable(true);
+        address.setDisable(true);
+        phoneNumber.setDisable(true);
+        birthDate.setDisable(true);
+        ownerList.setDisable(false);
     }
 
     @FXML
     void newOwner(MouseEvent event) {
-
+        email.setDisable(false);
+        name.setDisable(false);
+        address.setDisable(false);
+        phoneNumber.setDisable(false);
+        birthDate.setDisable(false);
+        ownerList.setDisable(true);
     }
 
     @FXML
