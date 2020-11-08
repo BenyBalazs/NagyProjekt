@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 @NoArgsConstructor(access = AccessLevel.PACKAGE)
 public class CarModelRepository extends GenericRepository<CarModel> {
 
-    private static final Logger logger = LoggerFactory.getLogger("GenericRepository<T>.class");
+    private static final Logger logger = LoggerFactory.getLogger("CarModelRepository.class");
 
     public void deleteAndSetConnectionToNull(CarModel entity) {
         if (!entity.getCars().isEmpty()) {

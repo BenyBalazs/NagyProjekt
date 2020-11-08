@@ -19,11 +19,11 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Setter(AccessLevel.PRIVATE)
     Integer carId;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "OWNER_FK")
     CarOwner owner;
     String licensePlate;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "MODEL_FK")
     CarModel model;
     LocalDate manufacturedDate;

@@ -32,8 +32,9 @@ public class CarsAndOwnersController {
             public void handle(MouseEvent mouseEvent) {
                 if(mouseEvent.getButton().equals(MouseButton.PRIMARY)){
                     if(mouseEvent.getClickCount() == 2){
-                        CarOwner owner = listOfOwners.getSelectionModel().getSelectedItem();
-                        listOfCars.setItems(FXCollections.observableList(owner.getOwnedCars()));
+                        listOfCars.setItems(FXCollections.
+                                observableList(Repositories.carRepository
+                                        .findEveryCarWithSameOwner(listOfOwners.getSelectionModel().getSelectedItem())));
                     }
                 }
             }
