@@ -9,7 +9,7 @@
 
 <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #166392;" stylesheets="@../css/mainWindow.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
    <left>
-      <VBox prefHeight="200.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="200.0" prefWidth="130.0" style="-fx-background-color: rgba(0, 0, 0, 0.1);" stylesheets="@../css/mainWindow.css" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" prefHeight="35.0" prefWidth="154.0" stylesheets="@../css/mainWindow.css" text="Menü">
                <VBox.margin>
