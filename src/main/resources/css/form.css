@@ -116,3 +116,11 @@
 .combo-box .list-view {
     -fx-background-color: aliceblue;
 }
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+}
+
+.combo-box .list-cell:hover {
+    -fx-text-fill: red;
+}
