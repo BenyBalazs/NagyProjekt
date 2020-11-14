@@ -11,3 +11,12 @@
     -fx-font-weight: bold;
     -fx-text-fill: #0062bd;
 }
+
+.text-field{
+    -fx-border-color: #fff;
+    -fx-background-color: transparent;
+    -fx-background-radius: 30%;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5%;
+    -fx-text-fill: #fff;
+}
