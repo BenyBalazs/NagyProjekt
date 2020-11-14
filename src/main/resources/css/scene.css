@@ -3,3 +3,11 @@
     -fx-text-fill: #fff;
     -fx-border-width: 0;
 }
+
+.button{
+    -fx-border-color: #fff;
+    -fx-border-radius: 20%;
+    -fx-background-color: #fff;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0062bd;
+}
