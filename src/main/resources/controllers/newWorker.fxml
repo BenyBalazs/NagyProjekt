@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controllers.NewWorkerController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/form.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewWorkerController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="226.4000244140625" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="373.5999755859375" minWidth="10.0" prefWidth="373.5999755859375" />
@@ -22,22 +22,22 @@
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="313.0" text="Név">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="313.0" stylesheets="@../css/form.css" text="Név">
                <VBox.margin>
                   <Insets right="5.0" top="13.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="312.0" text="Email">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="312.0" stylesheets="@../css/form.css" text="Email">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="330.0" text="Telefonszám">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="330.0" stylesheets="@../css/form.css" text="Telefonszám">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="345.0" text="Születési dátum">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="345.0" stylesheets="@../css/form.css" text="Születési dátum">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
@@ -46,29 +46,29 @@
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
          <children>
-            <TextField fx:id="workerName">
+            <TextField fx:id="workerName" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="workerEmail">
+            <TextField fx:id="workerEmail" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="workerPhoneNumber">
+            <TextField fx:id="workerPhoneNumber" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <DatePicker fx:id="workerBirthDate">
+            <DatePicker fx:id="workerBirthDate" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" top="10.0" />
                </VBox.margin>
             </DatePicker>
             <AnchorPane prefHeight="54.0" prefWidth="300.0">
                <children>
-                  <Button mnemonicParsing="false" onMouseClicked="#newWorkerSave" text="Mentés" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#newWorkerSave" stylesheets="@../css/form.css" text="Mentés" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0" />
                </children>
                <VBox.margin>
                   <Insets top="180.0" />
