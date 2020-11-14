@@ -96,3 +96,27 @@
     -fx-pref-height: 30px;
     -fx-pref-width: 30px;
 }
+
+.combo-box{
+    -fx-border-color: #fff;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20%;
+}
+
+.combo-box .text-field{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow-button{
+    -fx-border-color: transparent;
+    -fx-background-color: #fff;
+    -fx-background-radius: 50%;
+
+}
+
+.combo-box .list-view {
+    -fx-background-color: aliceblue;
+}
