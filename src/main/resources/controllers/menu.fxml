@@ -11,7 +11,7 @@
    <left>
       <VBox prefHeight="200.0" prefWidth="130.0" style="-fx-background-color: rgba(0, 0, 0, 0.1);" stylesheets="@../css/mainWindow.css" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" prefHeight="35.0" prefWidth="154.0" stylesheets="@../css/mainWindow.css" text="Menü">
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="154.0" stylesheets="@../css/mainWindow.css" text="Menü" id="menulabel">
                <VBox.margin>
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
