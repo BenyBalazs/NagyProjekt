@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controllers.NewCarController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/form.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewCarController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.39996337890625" minWidth="10.0" prefWidth="238.39996337890625" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.4000244140625" minWidth="10.0" prefWidth="361.60003662109375" />
@@ -24,27 +24,27 @@
    <children>
       <VBox prefHeight="400.0" prefWidth="242.0">
          <children>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="314.0" text="Márka">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="314.0" stylesheets="@../css/form.css" text="Márka">
                <VBox.margin>
                   <Insets right="5.0" top="15.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="307.0" text="Típus">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="307.0" stylesheets="@../css/form.css" text="Típus">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="346.0" text="Rendszám">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="346.0" stylesheets="@../css/form.css" text="Rendszám">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="331.0" text="Gyártási év">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="331.0" stylesheets="@../css/form.css" text="Gyártási év">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="321.0" text="Hiba leírása">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="321.0" stylesheets="@../css/form.css" text="Hiba leírása">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
@@ -53,34 +53,34 @@
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
          <children>
-            <ComboBox fx:id="brand" prefHeight="26.0" prefWidth="304.0" editable="true">
+            <ComboBox fx:id="brand" editable="true" prefHeight="26.0" prefWidth="304.0" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </ComboBox>
-            <ComboBox fx:id="type" prefHeight="26.0" prefWidth="305.0" editable="true">
+            <ComboBox fx:id="type" editable="true" prefHeight="26.0" prefWidth="305.0" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </ComboBox>
-            <TextField fx:id="licencePlate">
+            <TextField fx:id="licencePlate" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <DatePicker fx:id="manufacturedDate">
+            <DatePicker fx:id="manufacturedDate" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </DatePicker>
-            <TextArea fx:id="description" prefHeight="200.0" prefWidth="200.0">
+            <TextArea fx:id="description" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextArea>
             <AnchorPane prefHeight="39.0" prefWidth="300.0">
                <children>
-                  <Button mnemonicParsing="false" onMouseClicked="#ownerAndCarSave" text="Mentés" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#ownerAndCarSave" stylesheets="@../css/form.css" text="Mentés" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0" />
                </children>
             </AnchorPane>
          </children>
