@@ -19,15 +19,25 @@
 }
 
 .text-area{
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.text-area .content {
     -fx-border-color: #fff;
     -fx-background-color: transparent;
     -fx-border-width: 2px;
     -fx-border-radius: 5%;
 }
 
+.text-area .viewport{
+    -fx-background-color: transparent;
+}
+
 .text-field{
     -fx-border-color: #fff;
     -fx-background-color: transparent;
+    -fx-background-radius: 30%;
     -fx-border-width: 2px;
     -fx-border-radius: 5%;
 }
