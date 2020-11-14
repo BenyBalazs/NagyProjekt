@@ -1,5 +1,5 @@
 .root{
-    -fx-background-color: #009dff;
+    -fx-background-color: #166392;
 }
 
 .button{
@@ -21,6 +21,7 @@
 .text-area{
     -fx-border-width: 0;
     -fx-background-color: transparent;
+    -fx-text-fill: #fff;
 }
 
 .text-area .content {
@@ -40,6 +41,7 @@
     -fx-background-radius: 30%;
     -fx-border-width: 2px;
     -fx-border-radius: 5%;
+    -fx-text-fill: #fff;
 }
 
 .date-picker{
