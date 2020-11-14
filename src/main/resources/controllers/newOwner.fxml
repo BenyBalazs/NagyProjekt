@@ -83,11 +83,11 @@
                      <children>
                         <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="281.0" stylesheets="@../css/form.css" text="Név">
                            <VBox.margin>
-                              <Insets right="5.0" top="3.0" />
+                              <Insets right="5.0" top="1.0" />
                            </VBox.margin></Label>
                         <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="281.0" stylesheets="@../css/form.css" text="Cím">
                            <VBox.margin>
-                              <Insets right="5.0" top="18.0" />
+                              <Insets right="5.0" top="15.0" />
                            </VBox.margin></Label>
                         <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="281.0" stylesheets="@../css/form.css" text="Telefon">
                            <VBox.margin>

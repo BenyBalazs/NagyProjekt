@@ -1,5 +1,5 @@
 .root{
-    -fx-background-color: #00e3e9;
+    -fx-background-color: #009dff;
 }
 
 .button{
@@ -25,3 +25,62 @@
     -fx-border-radius: 5%;
 }
 
+.text-field{
+    -fx-border-color: #fff;
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5%;
+}
+
+.date-picker{
+    -fx-border-color: #fff;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20%;
+}
+
+.date-picker .text-field{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.date-picker .arrow-button{
+    -fx-border-color: transparent;
+    -fx-background-color: #fff;
+    -fx-background-radius: 50%;
+
+}
+
+.date-picker .arrow-button .arrow{
+    -fx-background-radius:0px ;
+    -fx-background-color: black;
+}
+
+.date-picker .cell {
+    -fx-background-color: aliceblue;
+    -fx-border-color: #344472;
+    -fx-pref-width:20px ;
+    -fx-pref-height:20px ;
+}
+
+.date-picker .cell:hover {
+    -fx-text-fill: red;
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: aliceblue;
+}
+
+.date-picker-popup > .month-year-pane .label {
+    -fx-background-color: transparent;
+    -fx-border-color: #344472;
+    -fx-text-fill: black;
+}
+
+.date-picker .button {
+    -fx-background-color: transparent;
+    -fx-border-color:#344472;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 30px;
+}
