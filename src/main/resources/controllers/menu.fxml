@@ -19,22 +19,22 @@
                   <Font size="36.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" onMouseClicked="#newRecord" prefHeight="26.0" prefWidth="136.0" stylesheets="@../css/mainWindow.css" text="Felvétel">
+            <Button mnemonicParsing="false" onMouseClicked="#newRecord" prefHeight="26.0" prefWidth="136.0" styleClass="menu" stylesheets="@../css/mainWindow.css" text="Felvétel">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#ownerAndCar" prefHeight="26.0" prefWidth="143.0" stylesheets="@../css/mainWindow.css" text="Autók és tulajok">
+            <Button fx:id="carAndOwner" mnemonicParsing="false" onMouseClicked="#ownerAndCar" prefHeight="26.0" prefWidth="143.0" styleClass="menu" stylesheets="@../css/mainWindow.css" text="Autók és tulajok">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#newWorker" prefHeight="26.0" prefWidth="134.0" stylesheets="@../css/mainWindow.css" text="Dolgozó felvétel">
+            <Button mnemonicParsing="false" onMouseClicked="#newWorker" prefHeight="26.0" prefWidth="134.0" styleClass="menu" stylesheets="@../css/mainWindow.css" text="Dolgozó felvétel">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#worker" prefHeight="26.0" prefWidth="152.0" stylesheets="@../css/mainWindow.css" text="Dolgozó">
+            <Button fx:id="mechanic" mnemonicParsing="false" onMouseClicked="#worker" prefHeight="26.0" prefWidth="152.0" styleClass="menu" stylesheets="@../css/mainWindow.css" text="Dolgozó">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>

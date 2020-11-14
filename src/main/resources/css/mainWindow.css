@@ -1,0 +1,11 @@
+.menu{
+    -fx-background-color: transparent;
+    -fx-font-size: 1.2em;
+    -fx-text-fill: white;
+}
+
+.menu:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}

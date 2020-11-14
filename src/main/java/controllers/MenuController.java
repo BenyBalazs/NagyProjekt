@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -19,6 +20,12 @@ import java.io.IOException;
 public class MenuController {
 
     private static Logger logger = LoggerFactory.getLogger("MenuController.class");
+
+    @FXML
+    private Button carAndOwner;
+
+    @FXML
+    private Button mechanic;
 
     @FXML
     public void initialize(){
@@ -41,12 +48,17 @@ public class MenuController {
 
     @FXML
     void ownerAndCar(MouseEvent event) {
+
         loadUi("carsAndOwners");
+        carAndOwner.setStyle("-fx-background-color: rgba(0, 0, 0, 0.2);");
+        mechanic.setStyle("-fx-background-color: transparent;");
     }
 
     @FXML
     void worker(MouseEvent event) {
         loadUi("worker");
+        carAndOwner.setStyle("-fx-background-color: transparent;");
+        mechanic.setStyle("-fx-background-color: rgba(0, 0, 0, 0.2);");
     }
 
     private void loadUi(String ui){
