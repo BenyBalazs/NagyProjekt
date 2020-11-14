@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/mainWindow.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CarsAndOwnersController">
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #166392;" stylesheets="@../css/mainWindow.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CarsAndOwnersController">
  <top>
     <HBox prefHeight="51.0" prefWidth="592.0" BorderPane.alignment="CENTER">
        <children>
