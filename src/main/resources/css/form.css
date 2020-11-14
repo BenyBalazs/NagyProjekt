@@ -10,3 +10,18 @@
     -fx-font-weight: 550;
     -fx-text-fill: #0062bd;
 }
+
+.label{
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-border-width: 0;
+}
+
+.text-area{
+    -fx-border-color: #fff;
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5%;
+}
+
