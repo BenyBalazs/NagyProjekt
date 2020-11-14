@@ -4,11 +4,10 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkerController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/mainWindow.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkerController">
    <children>
-      <ListView fx:id="listOfWorkers" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
-      <Button mnemonicParsing="false" onMouseClicked="#editWorker" text="Szerkesztés" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" />
-      <Button mnemonicParsing="false" onMouseClicked="#deleteWorker" text="Törlés" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+      <ListView fx:id="listOfWorkers" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/mainWindow.css" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Button mnemonicParsing="false" onMouseClicked="#editWorker" stylesheets="@../css/mainWindow.css" text="Szerkesztés" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" />
+      <Button mnemonicParsing="false" onMouseClicked="#deleteWorker" stylesheets="@../css/mainWindow.css" text="Törlés" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
    </children>
 </AnchorPane>
