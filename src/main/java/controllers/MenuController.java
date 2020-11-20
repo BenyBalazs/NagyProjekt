@@ -34,9 +34,6 @@ public class MenuController {
     @FXML
     public void initialize(){
         new Thread(EmfHelper::openEmf).start();
-
-        List<String> types = Repositories.carModelRepository.getEveryTypeFromGivenBrand("");
-        types.forEach(System.out::println);
     }
 
     @FXML
