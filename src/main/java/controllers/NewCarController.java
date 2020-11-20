@@ -44,7 +44,7 @@ public class NewCarController {
         Car car = new Car();
         car.setLicensePlate(licencePlate.getText());
         car.setManufacturedDate(manufacturedDate.getValue());
-        CarModel model = Repositories.carModelRepository.getByBrandAndType(brand.getValue(),type.getValue());
+        CarModel model = Repositories.carModelRepository.getModelByBrandAndType(brand.getValue(),type.getValue());
         if(model == null) {
             model = new CarModel();
             model.setBrand(brand.getValue());

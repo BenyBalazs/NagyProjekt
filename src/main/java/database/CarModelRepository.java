@@ -33,7 +33,7 @@ public class CarModelRepository extends GenericRepository<CarModel> {
         Repositories.carModelRepository.simpleDelete(entity);
     }
 
-    public CarModel getByBrandAndType(String brand, String type){
+    public CarModel getModelByBrandAndType(String brand, String type){
         EntityManager em = EmfHelper.getEntityManager();
         CriteriaBuilder cb = em.getCriteriaBuilder();
 
@@ -61,7 +61,24 @@ public class CarModelRepository extends GenericRepository<CarModel> {
         return Repositories.carModelRepository.findAll().stream().map(CarModel::getType).collect(Collectors.toList());
     }
     public List<String> getEveryTypeFromGivenBrand(String brand){
-        return Repositories.carModelRepository.findAll().stream().filter(carModel -> carModel.getBrand().equals(brand)).
-                map(CarModel::getType).collect(Collectors.toList());
+        brand = brand + '%';
+        EntityManager em = EmfHelper.getEntityManager();
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+
+        CriteriaQuery<CarModel> cq = cb.createQuery(CarModel.class);
+
+        Root<CarModel> from = cq.from(CarModel.class);
+
+        cq.select(from.get("type")).where(cb.like(from.get("brand"),brand,'%'));
+
+        try{
+            Query q = em.createQuery(cq);
+            return (ArrayList<String>) q.getResultList();
+        }catch (Exception e){
+            logger.error("Hiba a modell megtalálása közben.");
+        }finally {
+            em.close();
+        }
+        return getEveryTypeAsStringList();
     }
 }
