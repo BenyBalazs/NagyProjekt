@@ -2,6 +2,7 @@ package controllers;
 
 
 import database.EmfHelper;
+import database.Repositories;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,6 +17,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class MenuController {
 
@@ -30,6 +34,9 @@ public class MenuController {
     @FXML
     public void initialize(){
         new Thread(EmfHelper::openEmf).start();
+
+        List<String> types = Repositories.carModelRepository.getEveryTypeFromGivenBrand("");
+        types.forEach(System.out::println);
     }
 
     @FXML

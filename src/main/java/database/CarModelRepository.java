@@ -54,12 +54,6 @@ public class CarModelRepository extends GenericRepository<CarModel> {
         return null;
     }
 
-    public List<String> getEveryBrandAsStringList(){
-        return Repositories.carModelRepository.findAll().stream().map(CarModel::getBrand).collect(Collectors.toList());
-    }
-    public List<String> getEveryTypeAsStringList(){
-        return Repositories.carModelRepository.findAll().stream().map(CarModel::getType).collect(Collectors.toList());
-    }
     public List<String> getEveryTypeFromGivenBrand(String brand){
         brand = brand + '%';
         EntityManager em = EmfHelper.getEntityManager();
@@ -80,5 +74,13 @@ public class CarModelRepository extends GenericRepository<CarModel> {
             em.close();
         }
         return getEveryTypeAsStringList();
+    }
+
+    public List<String> getEveryBrandAsStringList(){
+        return Repositories.carModelRepository.findAll().stream().map(CarModel::getBrand).collect(Collectors.toList());
+    }
+
+    public List<String> getEveryTypeAsStringList(){
+        return Repositories.carModelRepository.findAll().stream().map(CarModel::getType).collect(Collectors.toList());
     }
 }
