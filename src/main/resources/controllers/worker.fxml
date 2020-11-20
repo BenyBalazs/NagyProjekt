@@ -4,7 +4,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #166392;" stylesheets="@../css/scene.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkerController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/scene.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkerController">
    <children>
       <ListView fx:id="listOfWorkers" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/scene.css" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
       <Button mnemonicParsing="false" onMouseClicked="#editWorker" stylesheets="@../css/scene.css" text="Szerkesztés" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" />
