@@ -60,4 +60,8 @@ public class CarModelRepository extends GenericRepository<CarModel> {
     public List<String> getEveryTypeAsStringList(){
         return Repositories.carModelRepository.findAll().stream().map(CarModel::getType).collect(Collectors.toList());
     }
+    public List<String> getEveryTypeFromGivenBrand(String brand){
+        return Repositories.carModelRepository.findAll().stream().filter(carModel -> carModel.getBrand().equals(brand)).
+                map(CarModel::getType).collect(Collectors.toList());
+    }
 }
