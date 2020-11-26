@@ -71,55 +71,55 @@
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
          <children>
-            <ComboBox prefHeight="26.0" prefWidth="220.0">
+            <ComboBox fx:id="brand" prefHeight="26.0" prefWidth="220.0">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </ComboBox>
-            <ComboBox prefHeight="26.0" prefWidth="220.0">
+            <ComboBox fx:id="type" prefHeight="26.0" prefWidth="220.0">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </ComboBox>
-            <TextField>
+            <TextField fx:id="licencePlate">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextField>
-            <DatePicker prefWidth="220.0">
+            <DatePicker fx:id="manufacturedDate" prefWidth="220.0">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </DatePicker>
-            <TextArea prefHeight="114.0" prefWidth="350.0">
+            <TextArea fx:id="description" prefHeight="114.0" prefWidth="350.0">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextArea>
-            <Spinner prefWidth="220.0">
+            <Spinner fx:id="price" prefWidth="220.0">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </Spinner>
-            <ComboBox prefWidth="220.0">
+            <ComboBox fx:id="status" prefWidth="220.0">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </ComboBox>
-            <ListView prefHeight="160.0" prefWidth="350.0">
+            <ListView fx:id="listOfWorkers" prefHeight="160.0" prefWidth="350.0">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </ListView>
             <HBox prefHeight="46.0" prefWidth="350.0">
                <children>
-                  <ComboBox prefWidth="220.0" />
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                  <ComboBox fx:id="pickWorker" prefWidth="220.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#addWorker" prefHeight="25.0" prefWidth="25.0" text="+">
                      <HBox.margin>
                         <Insets left="3.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-">
+                  <Button mnemonicParsing="false" onMouseClicked="#removeWorker" prefHeight="25.0" prefWidth="25.0" text="-">
                      <HBox.margin>
                         <Insets left="3.0" />
                      </HBox.margin>
@@ -134,7 +134,7 @@
                   <Insets top="30.0" />
                </VBox.margin>
                <children>
-                  <Button mnemonicParsing="false" text="Mentés" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#saveEditCar" text="Mentés" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0" />
                </children>
             </AnchorPane>
          </children>
