@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top right, rgba(0,53,115,1), rgba(0,123,170,1));" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RepairController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top right, rgba(0,53,115,1), rgba(0,123,170,1));" stylesheets="@../css/edit.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RepairController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.199951171875" minWidth="10.0" prefWidth="206.79998779296875" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="493.20001220703125" minWidth="10.0" prefWidth="493.20001220703125" />
@@ -27,42 +27,42 @@
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="356.0" text="Márka">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="356.0" stylesheets="@../css/edit.css" text="Márka">
                <VBox.margin>
                   <Insets right="5.0" top="10.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="357.0" text="Típus">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="357.0" stylesheets="@../css/edit.css" text="Típus">
                <VBox.margin>
                   <Insets right="5.0" top="10.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="366.0" text="Rendszám">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="366.0" stylesheets="@../css/edit.css" text="Rendszám">
                <VBox.margin>
                   <Insets right="5.0" top="13.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="354.0" text="Gyártási év">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="354.0" stylesheets="@../css/edit.css" text="Gyártási év">
                <VBox.margin>
                   <Insets right="5.0" top="13.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="364.0" text="Hiba leírása">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="364.0" stylesheets="@../css/edit.css" text="Hiba leírása">
                <VBox.margin>
                   <Insets right="5.0" top="13.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="363.0" text="Költség">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="363.0" stylesheets="@../css/edit.css" text="Költség">
                <VBox.margin>
                   <Insets right="5.0" top="100.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="378.0" text="Állapot">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="378.0" stylesheets="@../css/edit.css" text="Állapot">
                <VBox.margin>
                   <Insets right="5.0" top="13.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="385.0" text="Szerelő">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="385.0" stylesheets="@../css/edit.css" text="Szerelő">
                <VBox.margin>
                   <Insets right="5.0" top="13.0" />
                </VBox.margin>
@@ -71,55 +71,55 @@
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
          <children>
-            <ComboBox fx:id="brand" prefHeight="26.0" prefWidth="220.0">
+            <ComboBox fx:id="brand" prefHeight="26.0" prefWidth="220.0" stylesheets="@../css/edit.css">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </ComboBox>
-            <ComboBox fx:id="type" prefHeight="26.0" prefWidth="220.0">
+            <ComboBox fx:id="type" prefHeight="26.0" prefWidth="220.0" stylesheets="@../css/edit.css">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </ComboBox>
-            <TextField fx:id="licencePlate">
+            <TextField fx:id="licencePlate" stylesheets="@../css/edit.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextField>
-            <DatePicker fx:id="manufacturedDate" prefWidth="220.0">
+            <DatePicker fx:id="manufacturedDate" prefWidth="220.0" stylesheets="@../css/edit.css">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </DatePicker>
-            <TextArea fx:id="description" prefHeight="114.0" prefWidth="350.0">
+            <TextArea fx:id="description" prefHeight="114.0" prefWidth="350.0" stylesheets="@../css/edit.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextArea>
-            <Spinner fx:id="price" prefWidth="220.0">
+            <Spinner fx:id="price" prefWidth="220.0" stylesheets="@../css/edit.css">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </Spinner>
-            <ComboBox fx:id="status" prefWidth="220.0">
+            <ComboBox fx:id="status" prefWidth="220.0" stylesheets="@../css/edit.css">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </ComboBox>
-            <ListView fx:id="listOfWorkers" prefHeight="160.0" prefWidth="350.0">
+            <ListView fx:id="listOfWorkers" prefHeight="160.0" prefWidth="350.0" stylesheets="@../css/edit.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </ListView>
             <HBox prefHeight="46.0" prefWidth="350.0">
                <children>
-                  <ComboBox fx:id="pickWorker" prefWidth="220.0" />
-                  <Button mnemonicParsing="false" onMouseClicked="#addWorker" prefHeight="25.0" prefWidth="25.0" text="+">
+                  <ComboBox fx:id="pickWorker" prefWidth="220.0" stylesheets="@../css/edit.css" />
+                  <Button mnemonicParsing="false" onMouseClicked="#addWorker" prefHeight="25.0" prefWidth="25.0" stylesheets="@../css/edit.css" text="+">
                      <HBox.margin>
                         <Insets left="3.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" onMouseClicked="#removeWorker" prefHeight="25.0" prefWidth="25.0" text="-">
+                  <Button mnemonicParsing="false" onMouseClicked="#removeWorker" prefHeight="25.0" prefWidth="25.0" stylesheets="@../css/edit.css" text="-">
                      <HBox.margin>
                         <Insets left="3.0" />
                      </HBox.margin>
@@ -134,7 +134,7 @@
                   <Insets top="30.0" />
                </VBox.margin>
                <children>
-                  <Button mnemonicParsing="false" onMouseClicked="#saveEditCar" text="Mentés" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#saveEditCar" stylesheets="@../css/edit.css" text="Mentés" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0" />
                </children>
             </AnchorPane>
          </children>
