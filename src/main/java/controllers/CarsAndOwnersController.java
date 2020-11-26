@@ -47,6 +47,11 @@ public class CarsAndOwnersController {
     }
 
     @FXML
+    void editCarAndWork(MouseEvent event) {
+
+    }
+
+    @FXML
     void searchOwner(MouseEvent event) {
         Repositories.repairRepository.findAll();
     }
