@@ -4,15 +4,27 @@ import database.Repositories;
 import javafx.collections.FXCollections;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.Window;
 import models.Car;
 import models.CarOwner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
 
 public class CarsAndOwnersController {
+
+    private static Logger logger = LoggerFactory.getLogger("CarsAndOwnersController.class");
 
     @FXML
     private TextField searchField;
@@ -43,7 +55,21 @@ public class CarsAndOwnersController {
 
     @FXML
     void editOwner(MouseEvent event) {
-
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("editOwner.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Tulaj szerkesztése");
+            stage.setResizable(false);
+            stage.sizeToScene();
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
+            stage.show();
+        } catch (IOException ex) {
+            logger.error("A hiba forrása {}", ex.toString());
+        }
     }
 
     @FXML
@@ -56,5 +82,7 @@ public class CarsAndOwnersController {
     void searchOwner(MouseEvent event) {
         Repositories.repairRepository.findAll();
     }
+
+
 
 }
