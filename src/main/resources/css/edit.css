@@ -1,11 +1,4 @@
-#plus{
-    -fx-pref-height: 25;
-    -fx-pref-width: 25;
-    -fx-font-size: 1em;
-    -fx-font-weight: normal;
-}
-
-#minus{
+#plus, #minus{
     -fx-pref-height: 25;
     -fx-pref-width: 25;
     -fx-font-size: 1em;
@@ -32,4 +25,32 @@
 
 .list-cell:focused{
     -fx-background-color: #d7d7d7;
+}
+
+.spinner{
+    -fx-background-color: transparent;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5%;
+}
+
+.spinner .text-field{
+    -fx-border-color: transparent;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-body-color: #fff;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 10;
+
+}
+
+.spinner .increment-arrow-button{
+    -fx-background-radius: 60% 60% 0 0;
+}
+
+.spinner .decrement-arrow-button{
+    -fx-background-radius: 0 0 60% 60%;
 }
