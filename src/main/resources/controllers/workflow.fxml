@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkflowController">
    <center>
-      <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <ListView fx:id="listOfRepairs" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets left="5.0" right="5.0" top="10.0" />
          </BorderPane.margin>
@@ -18,8 +17,8 @@
    <bottom>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Szerkesztés" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="7.0" />
-            <Button mnemonicParsing="false" text="Törlés" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="7.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#editRepair" text="Szerkesztés" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="7.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#deleteRepair" text="Törlés" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="7.0" />
          </children>
       </AnchorPane>
    </bottom>
