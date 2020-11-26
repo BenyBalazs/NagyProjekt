@@ -41,7 +41,10 @@
          </BorderPane.margin></ListView>
    </center>
    <bottom>
-      <AnchorPane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#editOwner" text="Tulaj szerkesztése" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="8.0" />
+         </children></AnchorPane>
    </bottom>
    <left>
       <ListView fx:id="listOfOwners" prefHeight="307.0" prefWidth="270.0" stylesheets="@../css/scene.css" BorderPane.alignment="CENTER" />
