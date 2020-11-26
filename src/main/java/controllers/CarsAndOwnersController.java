@@ -48,7 +48,8 @@ public class CarsAndOwnersController {
 
     @FXML
     void editCarAndWork(MouseEvent event) {
-
+        WizardController.createStage("workflow","Munkafolyamatok");
+        WizardController.showStage();
     }
 
     @FXML

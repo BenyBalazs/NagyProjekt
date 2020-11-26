@@ -16,7 +16,7 @@ public class WorkflowController {
 
     @FXML
     void editRepair(MouseEvent event) {
-
+        WizardController.changeScene("repair", "Munkafolyamat szerkesztése");
     }
 
 }
