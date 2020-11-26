@@ -86,7 +86,6 @@ public class NewOwnerController {
         }
         OwnerTransfer.ownerTransfer = carOwner;
         WizardController.changeScene("newCar", "Új autó adatai");
-        WizardController.showStage();
     }
 
 }
