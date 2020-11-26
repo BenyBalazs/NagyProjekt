@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to top right, rgba(0,53,115,1), rgba(0,123,170,1));" stylesheets="@../css/edit.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditOwnerController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to top right, rgba(0,53,115,1), rgba(0,123,170,1));" stylesheets="@../css/form.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditOwnerController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="213.5999755859375" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="386.4000244140625" minWidth="10.0" prefWidth="386.4000244140625" />
@@ -22,27 +22,27 @@
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0">
          <children>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="305.0" stylesheets="@../css/edit.css" text="Név">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="305.0" stylesheets="@../css/form.css" text="Név">
                <VBox.margin>
                   <Insets right="5.0" top="13.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="308.0" stylesheets="@../css/edit.css" text="Cím">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="308.0" stylesheets="@../css/form.css" text="Cím">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="324.0" stylesheets="@../css/edit.css" text="Telefon">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="324.0" stylesheets="@../css/form.css" text="Telefon">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="331.0" stylesheets="@../css/edit.css" text="Email">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="331.0" stylesheets="@../css/form.css" text="Email">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="327.0" stylesheets="@../css/edit.css" text="Születési dátum">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="327.0" stylesheets="@../css/form.css" text="Születési dátum">
                <VBox.margin>
                   <Insets right="5.0" top="18.0" />
                </VBox.margin>
@@ -51,34 +51,34 @@
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
          <children>
-            <TextField fx:id="name" stylesheets="@../css/edit.css">
+            <TextField fx:id="name" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="address" stylesheets="@../css/edit.css">
+            <TextField fx:id="address" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="phoneNumber" stylesheets="@../css/edit.css">
+            <TextField fx:id="phoneNumber" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="email" stylesheets="@../css/edit.css">
+            <TextField fx:id="email" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <DatePicker fx:id="birthDate" stylesheets="@../css/edit.css">
+            <DatePicker fx:id="birthDate" stylesheets="@../css/form.css">
                <VBox.margin>
                   <Insets left="5.0" top="10.0" />
                </VBox.margin>
             </DatePicker>
             <AnchorPane prefHeight="61.0" prefWidth="387.0">
                <children>
-                  <Button mnemonicParsing="false" onMouseClicked="#saveEditOwner" stylesheets="@../css/edit.css" text="Mentés" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="30.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#saveEditOwner" stylesheets="@../css/form.css" text="Mentés" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="30.0" />
                </children>
                <VBox.margin>
                   <Insets top="100.0" />
