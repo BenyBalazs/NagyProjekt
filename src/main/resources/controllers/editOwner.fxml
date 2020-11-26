@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditOwnerController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="213.5999755859375" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="386.4000244140625" minWidth="10.0" prefWidth="386.4000244140625" />
@@ -51,34 +51,34 @@
       </VBox>
       <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
          <children>
-            <TextField>
+            <TextField fx:id="name">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField>
+            <TextField fx:id="address">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField>
+            <TextField fx:id="phoneNumber">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField>
+            <TextField fx:id="email">
                <VBox.margin>
                   <Insets left="5.0" right="5.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <DatePicker>
+            <DatePicker fx:id="birthDate">
                <VBox.margin>
                   <Insets left="5.0" top="10.0" />
                </VBox.margin>
             </DatePicker>
             <AnchorPane prefHeight="61.0" prefWidth="387.0">
                <children>
-                  <Button mnemonicParsing="false" text="Mentés" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="30.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#saveEditOwner" text="Mentés" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="30.0" />
                </children>
                <VBox.margin>
                   <Insets top="100.0" />
