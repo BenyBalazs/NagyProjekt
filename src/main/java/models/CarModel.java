@@ -24,10 +24,6 @@ public class CarModel {
 
     @Override
     public String toString() {
-        return "CarModel{" +
-                "carModelId=" + carModelId +
-                ", brand='" + brand + '\'' +
-                ", type='" + type + '\'' +
-                '}';
+        return brand + " " + type;
     }
 }
