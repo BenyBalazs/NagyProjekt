@@ -58,14 +58,6 @@ public class Repair {
 
     @Override
     public String toString() {
-        return "Repair{" +
-                "repairId=" + repairId +
-                ", carOnRepair=" + carOnRepair.toString() +
-                ", startOfRepair=" + startOfRepair +
-                ", endOfRepair=" + endOfRepair +
-                ", price=" + price +
-                ", description='" + description + '\'' +
-                ", mechanics=" + mechanics +
-                '}';
+        return repairId + " " + repairState + " " + price + " " + (startOfRepair == null ? " " : startOfRepair.toString());
     }
 }
