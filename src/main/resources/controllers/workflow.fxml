@@ -18,7 +18,7 @@
       <AnchorPane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onMouseClicked="#editRepair" stylesheets="@../css/scene.css" text="Szerkesztés" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="7.0" />
-            <Button mnemonicParsing="false" onMouseClicked="#deleteRepair" stylesheets="@../css/scene.css" text="Törlés" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="7.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#deleteRepair" stylesheets="@../css/scene.css" text="Munkafolyamat törlése" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="7.0" />
          </children>
       </AnchorPane>
    </bottom>
