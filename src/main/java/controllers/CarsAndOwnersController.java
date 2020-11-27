@@ -73,6 +73,11 @@ public class CarsAndOwnersController {
     }
 
     @FXML
+    void deleteCar(MouseEvent event) {
+
+    }
+
+    @FXML
     void editCarAndWork(MouseEvent event) {
         WizardController.createStage("workflow","Munkafolyamatok");
         WizardController.showStage();
