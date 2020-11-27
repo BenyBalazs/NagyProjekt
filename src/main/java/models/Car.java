@@ -32,12 +32,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "carId=" + carId +
-                ", owner=" + owner +
-                ", licensePlate='" + licensePlate + '\'' +
-                ", model=" + model +
-                ", manufacturedDate=" + manufacturedDate +
-                '}';
+        return carId + " " + licensePlate + " " + model.toString() + " " + manufacturedDate.toString();
     }
 }
