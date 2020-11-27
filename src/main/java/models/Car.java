@@ -35,6 +35,6 @@ public class Car {
         return carId + " " + licensePlate + " " + model.toString() + " " + manufacturedDate.toString();
     }
     public String toStringWithOwner(){
-        return carId + " " + owner.getName() + " " + licensePlate + " " + model.toString() + " " + manufacturedDate.toString();
+        return carId + " " + owner.getName() + " " + licensePlate + " " + model.toString() + " " + (manufacturedDate == null ? " " : manufacturedDate.toString() );
     }
 }
