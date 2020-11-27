@@ -17,7 +17,7 @@ public class CarOwner {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Setter(AccessLevel.PRIVATE)
-    Integer carModelId;
+    Integer carOwnerId;
     String name;
     String address;
     LocalDate dateOfBirth;
@@ -28,13 +28,6 @@ public class CarOwner {
 
     @Override
     public String toString() {
-        return "CarOwner{" +
-                "carModelId=" + carModelId +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", email='" + email + '\'' +
-                ", phoneNum='" + phoneNum + '\'' +
-                '}';
+        return name + " " + (dateOfBirth == null ? " " : dateOfBirth.toString());
     }
 }
