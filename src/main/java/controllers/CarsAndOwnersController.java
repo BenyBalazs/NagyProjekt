@@ -80,7 +80,12 @@ public class CarsAndOwnersController {
 
     @FXML
     void searchOwner(MouseEvent event) {
-        Repositories.repairRepository.findAll();
+        String name = searchField.getText().trim();
+        if(name.isEmpty()){
+            listOfOwners.setItems(FXCollections.observableList(Repositories.carOwnerRepository.findAll()));
+            return;
+        }
+        listOfOwners.setItems(FXCollections.observableList(Repositories.carOwnerRepository.findByName(name)));
     }
 
 
