@@ -34,4 +34,7 @@ public class Car {
     public String toString() {
         return carId + " " + licensePlate + " " + model.toString() + " " + manufacturedDate.toString();
     }
+    public String toStringWithOwner(){
+        return carId + " " + owner.getName() + " " + licensePlate + " " + model.toString() + " " + manufacturedDate.toString();
+    }
 }
