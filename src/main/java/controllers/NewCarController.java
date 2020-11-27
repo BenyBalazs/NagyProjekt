@@ -36,7 +36,13 @@ public class NewCarController {
     @FXML
     public void initialize(){
         brand.setItems(FXCollections.observableList(Repositories.carModelRepository.getEveryBrandAsStringList()));
-        type.setItems(FXCollections.observableList(Repositories.carModelRepository.getEveryTypeAsStringList()));
+        //type.setItems(FXCollections.observableList(Repositories.carModelRepository.getEveryTypeAsStringList()));
+        brand.setOnAction((actionEvent) -> {
+            type.getItems().removeAll();
+            type.setItems(FXCollections.
+                    observableList(Repositories.carModelRepository.
+                            getEveryTypeFromGivenBrand(brand.getValue())));
+        });
     }
 
     @FXML
