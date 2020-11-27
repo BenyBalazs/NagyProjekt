@@ -23,6 +23,11 @@ public class EditOwnerController {
     private DatePicker birthDate;
 
     @FXML
+    void deleteOwner(MouseEvent event) {
+
+    }
+
+    @FXML
     void saveEditOwner(MouseEvent event) {
 
     }
