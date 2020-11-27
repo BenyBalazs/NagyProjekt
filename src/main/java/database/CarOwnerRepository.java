@@ -34,7 +34,7 @@ public class CarOwnerRepository extends GenericRepository<CarOwner> {
         Repositories.carOwnerRepository.simpleDelete(entity);
     }
 
-    public List<CarOwner> getEveryTypeFromGivenBrand(String name){
+    public List<CarOwner> findByName(String name){
         name += '%';
         EntityManager em = EmfHelper.getEntityManager();
         CriteriaBuilder cb = em.getCriteriaBuilder();
