@@ -44,6 +44,11 @@
       <AnchorPane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onMouseClicked="#editOwner" text="Tulaj szerkesztése" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="8.0" />
+            <Button mnemonicParsing="false" text="Autó törlése" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="8.0">
+               <padding>
+                  <Insets top="8.0" />
+               </padding>
+            </Button>
             <Button mnemonicParsing="false" onMouseClicked="#editCarAndWork" text="Autó és munkafolyamat szerkesztése" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="8.0" />
          </children></AnchorPane>
    </bottom>
