@@ -8,14 +8,16 @@ import javafx.scene.control.Spinner;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import models.Mechanic;
+import models.Repair;
 
 public class RepairController {
 
     @FXML
-    private ComboBox<?> brand;
+    private ComboBox<String> brand;
 
     @FXML
-    private ComboBox<?> type;
+    private ComboBox<String> type;
 
     @FXML
     private TextField licencePlate;
@@ -27,16 +29,16 @@ public class RepairController {
     private TextArea description;
 
     @FXML
-    private Spinner<?> price;
+    private Spinner<Integer> price;
 
     @FXML
-    private ComboBox<?> status;
+    private ComboBox<Repair.RepairState> status;
 
     @FXML
-    private ListView<?> listOfWorkers;
+    private ListView<Mechanic> listOfWorkers;
 
     @FXML
-    private ComboBox<?> pickWorker;
+    private ComboBox<Mechanic> pickWorker;
 
     @FXML
     void addWorker(MouseEvent event) {
