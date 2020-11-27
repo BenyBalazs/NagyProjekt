@@ -33,12 +33,6 @@ public class Mechanic {
 
     @Override
     public String toString() {
-        return "Mechanic{" +
-                "mechanicId=" + mechanicId +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNum='" + phoneNum + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                '}';
+        return name + " " + (dateOfBirth == null ? " " : dateOfBirth.toString()) + " " + phoneNum;
     }
 }
