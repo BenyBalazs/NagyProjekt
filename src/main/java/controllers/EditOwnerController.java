@@ -71,6 +71,10 @@ public class EditOwnerController {
         OwnerTransfer.ownerTransfer.setEmail(email.getText());
         OwnerTransfer.ownerTransfer.setDateOfBirth(birthDate.getValue());
         Repositories.carOwnerRepository.commitChange(OwnerTransfer.ownerTransfer);
+        Alert saveSuccess = new Alert(Alert.AlertType.INFORMATION);
+        saveSuccess.setTitle("Sikeres mentés!");
+        saveSuccess.setContentText("A tulajdonos adatai sikeresen módosításra kerültek!");
+        saveSuccess.showAndWait();
     }
 
 }
