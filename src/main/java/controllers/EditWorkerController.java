@@ -40,7 +40,7 @@ public class EditWorkerController {
     }
 
     @FXML
-    void deleteOwner(MouseEvent event) {
+    void deleteMechanic(MouseEvent event) {
         Alert confirmDelete = new Alert(Alert.AlertType.CONFIRMATION);
         confirmDelete.setTitle("Törlés megerősítése!");
         confirmDelete.setContentText("A törlés visszaállíthatatlanul eltávolítja az objektumot az adatbázisból és anomáliákhoz vezethet! Kérjük győződjön meg arról, hogy a szerelő már nincs benne az adatbázisban!");
