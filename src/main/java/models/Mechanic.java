@@ -18,14 +18,13 @@ public class Mechanic {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Setter(AccessLevel.PRIVATE)
     @Column(name = "MECHANIC_ID")
     Integer mechanicId;
     String name;
     String email;
     String phoneNum;
     LocalDate dateOfBirth;
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "REPAIRS",
             joinColumns = @JoinColumn(name = "REPAIR_ID"),
             inverseJoinColumns = @JoinColumn(name = "MECHANIC_ID"))
