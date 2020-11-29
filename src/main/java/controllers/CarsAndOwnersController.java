@@ -17,6 +17,7 @@ import models.Car;
 import models.CarOwner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utility.CarTransfer;
 import utility.OwnerTransfer;
 
 import java.io.IOException;
@@ -98,8 +99,25 @@ public class CarsAndOwnersController {
 
     @FXML
     void editCarAndWork(MouseEvent event) {
-        WizardController.createStage("workflow","Munkafolyamatok");
-        WizardController.showStage();
+        CarTransfer.carTransfer = listOfCars.getSelectionModel().getSelectedItem();
+        if(CarTransfer.carTransfer == null)
+            return;
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("workflow.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Munkafolyamatok");
+            stage.setResizable(false);
+            stage.sizeToScene();
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
+            stage.show();
+            stage.setOnCloseRequest(windowEvent -> CarTransfer.carTransfer = null);
+        } catch (IOException ex) {
+            logger.error("A hiba forrása {}", ex.toString());
+        }
     }
 
     @FXML
