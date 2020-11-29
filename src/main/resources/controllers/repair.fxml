@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Spinner?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
 
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to top right, rgba(0,53,115,1), rgba(0,123,170,1));" stylesheets="@../css/form.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RepairController">
   <columnConstraints>
@@ -96,10 +86,13 @@
                   <Insets left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </TextArea>
-            <Spinner fx:id="price" prefWidth="220.0" stylesheets="@../css/edit.css">
+            <Spinner fx:id="price" prefWidth="220.0" stylesheets="@../css/edit.css" amountToStepBy="1" editable="true" initialValue="1" min="0">
                <VBox.margin>
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
+               <valueFactory>
+                  <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" max="999999999" />
+               </valueFactory>
             </Spinner>
             <ComboBox fx:id="status" prefWidth="220.0" stylesheets="@../css/form.css">
                <VBox.margin>
