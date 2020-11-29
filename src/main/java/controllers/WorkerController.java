@@ -3,14 +3,22 @@ package controllers;
 import database.Repositories;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.Window;
 import models.Mechanic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utility.MechanicTransfer;
 
+import java.io.IOException;
 import java.util.Optional;
 
 public class WorkerController {
@@ -49,6 +57,23 @@ public class WorkerController {
     @FXML
     void editWorker(MouseEvent event) {
 
+        MechanicTransfer.mechanicTransfer = listOfWorkers.getSelectionModel().getSelectedItem();
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("editWorker.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Szerelő szerkesztése");
+            stage.setResizable(false);
+            stage.sizeToScene();
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
+            stage.show();
+            stage.setOnCloseRequest(windowEvent -> MechanicTransfer.mechanicTransfer = null);
+        } catch (IOException ex) {
+            logger.error("A hiba forrása {}", ex.toString());
+        }
     }
 
 }
