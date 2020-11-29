@@ -43,7 +43,23 @@ public class EditOwnerController {
 
     @FXML
     void deleteOwner(MouseEvent event) {
+        Alert confirmDelete = new Alert(Alert.AlertType.CONFIRMATION);
+        confirmDelete.setTitle("Törlés megerősítése!");
+        confirmDelete.setContentText("A törlés visszaállíthatatlanul eltávolítja az objektumot az adatbázisból és anomáliákhoz vezethet! Kérjük győződjön meg arról, hogy az autóhoz nem tartozik szerelés!");
+        ButtonType confirm = new ButtonType("Törölje az adatbázisból!");
+        ButtonType cancel = new ButtonType("Mégse");
+        confirmDelete.getButtonTypes().setAll(confirm,cancel);
 
+        Optional<ButtonType> result = confirmDelete.showAndWait();
+
+        if(result.get() == confirm){
+            logger.trace("A felhasználó törölni kívánta az entitást!");
+            Repositories.carOwnerRepository.deleteAndSetConnectionToNull(OwnerTransfer.ownerTransfer);
+            Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+            deleteSuccess.setTitle("Sikeres törlés!");
+            deleteSuccess.setContentText("Az autó törölve lett az adatbázisból!");
+            deleteSuccess.showAndWait();
+        }
     }
 
     @FXML
