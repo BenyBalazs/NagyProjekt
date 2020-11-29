@@ -79,6 +79,10 @@ public class RepairController {
         currentRepair.getMechanics().add(listOfWorkers.getSelectionModel().getSelectedItem());
         Repositories.repairRepository.commitChange(currentRepair);
         listOfWorkers.refresh();
+        Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+        deleteSuccess.setTitle("Sikeres hozzáadás!");
+        deleteSuccess.setContentText("A javítás adatai sikeresen hozzá lett adva az adatbázishoz!");
+        deleteSuccess.showAndWait();
     }
 
     @FXML
@@ -86,6 +90,7 @@ public class RepairController {
         currentRepair.getMechanics().remove(listOfWorkers.getSelectionModel().getSelectedItem());
         Repositories.repairRepository.commitChange(currentRepair);
         listOfWorkers.refresh();
+
     }
 
     @FXML
