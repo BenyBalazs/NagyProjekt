@@ -100,7 +100,17 @@ public class RepairController {
             Repositories.carModelRepository.createNew(model);
         }
 
+        carOnRepair.setModel(model);
+        carOnRepair.setLicensePlate(licencePlate.getText());
+        carOnRepair.setManufacturedDate(manufacturedDate.getValue());
 
+        Repositories.carRepository.commitChange(carOnRepair);
+
+        currentRepair.setDescription(description.getText());
+        currentRepair.setPrice(price.getValue());
+        currentRepair.setRepairState(status.getValue());
+
+        Repositories.repairRepository.commitChange(currentRepair);
 
     }
 
