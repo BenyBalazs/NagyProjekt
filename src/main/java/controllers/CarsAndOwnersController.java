@@ -86,6 +86,10 @@ public class CarsAndOwnersController {
         if(result.get() == confirm){
             logger.trace("A felhasználó törölni kívánta az entitást!");
             Repositories.carRepository.deleteAndSetConnectionToNull(listOfCars.getSelectionModel().getSelectedItem());
+            Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+            deleteSuccess.setTitle("Sikeres törlés!");
+            deleteSuccess.setContentText("Az autó törölve lett az adatbázisból!");
+            deleteSuccess.showAndWait();
         }
     }
 
