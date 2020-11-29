@@ -6,6 +6,6 @@ import models.CarOwner;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class OwnerTransfer {
-    public static CarOwner ownerTransfer = new CarOwner();
+    public static CarOwner ownerTransfer = null;
 
 }

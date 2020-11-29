@@ -17,6 +17,7 @@ import models.Car;
 import models.CarOwner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utility.OwnerTransfer;
 
 import java.io.IOException;
 import java.io.OptionalDataException;
@@ -55,6 +56,7 @@ public class CarsAndOwnersController {
 
     @FXML
     void editOwner(MouseEvent event) {
+        OwnerTransfer.ownerTransfer = listOfOwners.getSelectionModel().getSelectedItem();
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("editOwner.fxml"));
@@ -67,6 +69,7 @@ public class CarsAndOwnersController {
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
             stage.show();
+            stage.setOnCloseRequest(windowEvent -> OwnerTransfer.ownerTransfer = null);
         } catch (IOException ex) {
             logger.error("A hiba forrása {}", ex.toString());
         }
