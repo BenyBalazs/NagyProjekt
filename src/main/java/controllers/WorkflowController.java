@@ -3,16 +3,25 @@ package controllers;
 import database.Repositories;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.Window;
 import models.Repair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utility.CarTransfer;
+import utility.OwnerTransfer;
+import utility.RepairTransfer;
 
+import java.io.IOException;
 import java.util.Optional;
 
 public class WorkflowController {
@@ -51,7 +60,23 @@ public class WorkflowController {
 
     @FXML
     void editRepair(MouseEvent event) {
-        WizardController.changeScene("repair", "Munkafolyamat szerkesztése");
+        RepairTransfer.repairTransfer = listOfRepairs.getSelectionModel().getSelectedItem();
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("repair.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("Munkafolyamat");
+            stage.setResizable(false);
+            stage.sizeToScene();
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
+            stage.show();
+            stage.setOnCloseRequest(windowEvent -> RepairTransfer.repairTransfer = null);
+        } catch (IOException ex) {
+            logger.error("A hiba forrása {}", ex.toString());
+        }
     }
 
 }
