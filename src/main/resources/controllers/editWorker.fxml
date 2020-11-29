@@ -44,7 +44,7 @@
                 </Label>
             <AnchorPane prefHeight="46.0" prefWidth="227.0">
                <children>
-                  <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#deleteOwner" stylesheets="@../css/form.css" text="Törlés" AnchorPane.rightAnchor="143.6" AnchorPane.topAnchor="2.0" />
+                  <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#deleteMechanic" stylesheets="@../css/form.css" text="Törlés" AnchorPane.rightAnchor="143.6" AnchorPane.topAnchor="2.0" />
                </children>
                <VBox.margin>
                   <Insets top="185.0" />
