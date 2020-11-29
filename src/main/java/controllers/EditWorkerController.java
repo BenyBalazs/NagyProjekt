@@ -41,6 +41,11 @@ public class EditWorkerController {
 
     @FXML
     void save(MouseEvent event) {
+        MechanicTransfer.mechanicTransfer.setName(workerName.getText());
+        MechanicTransfer.mechanicTransfer.setPhoneNum(workerPhoneNumber.getText());
+        MechanicTransfer.mechanicTransfer.setEmail(workerEmail.getText());
+        MechanicTransfer.mechanicTransfer.setDateOfBirth(workerBirthDate.getValue());
+        Repositories.mechanicRepository.commitChange(MechanicTransfer.mechanicTransfer);
 
     }
 
