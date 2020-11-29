@@ -39,7 +39,10 @@ public class WorkerController {
         if(result.get() == confirm){
             logger.trace("A felhasználó törölni kívánta az entitást!");
             Repositories.mechanicRepository.deleteAndSetConnectionToNull(listOfWorkers.getSelectionModel().getSelectedItem());
-
+            Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+            deleteSuccess.setTitle("Sikeres törlés!");
+            deleteSuccess.setContentText("A szerelő sikeresen törölve lett az adatbázisból!");
+            deleteSuccess.showAndWait();
         }
     }
 
