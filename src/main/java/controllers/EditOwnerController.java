@@ -7,6 +7,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.input.TransferMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utility.OwnerTransfer;
@@ -64,7 +65,12 @@ public class EditOwnerController {
 
     @FXML
     void saveEditOwner(MouseEvent event) {
-
+        OwnerTransfer.ownerTransfer.setName(name.getText());
+        OwnerTransfer.ownerTransfer.setAddress(address.getText());
+        OwnerTransfer.ownerTransfer.setPhoneNum(phoneNumber.getText());
+        OwnerTransfer.ownerTransfer.setEmail(email.getText());
+        OwnerTransfer.ownerTransfer.setDateOfBirth(birthDate.getValue());
+        Repositories.carOwnerRepository.commitChange(OwnerTransfer.ownerTransfer);
     }
 
 }
