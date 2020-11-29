@@ -7,9 +7,11 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import models.Mechanic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import utility.MechanicTransfer;
+import utility.OwnerTransfer;
 
 import java.util.Optional;
 
@@ -31,7 +33,10 @@ public class EditWorkerController {
 
     @FXML
     public void initialize(){
-
+        workerName.setText(MechanicTransfer.mechanicTransfer.getName());
+        workerEmail.setText(MechanicTransfer.mechanicTransfer.getEmail());
+        workerPhoneNumber.setText(MechanicTransfer.mechanicTransfer.getPhoneNum());
+        workerBirthDate.setValue(MechanicTransfer.mechanicTransfer.getDateOfBirth());
     }
 
     @FXML
