@@ -74,7 +74,7 @@ public class CarsAndOwnersController {
 
     @FXML
     void deleteCar(MouseEvent event) {
-
+        Repositories.carRepository.deleteAndSetConnectionToNull(listOfCars.getSelectionModel().getSelectedItem());
     }
 
     @FXML
