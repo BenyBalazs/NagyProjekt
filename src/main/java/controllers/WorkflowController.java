@@ -33,7 +33,10 @@ public class WorkflowController {
         if(result.get() == confirm){
             logger.trace("A felhasználó törölni kívánta az entitást!");
             Repositories.repairRepository.deleteAndSetConnectionToNull(listOfRepairs.getSelectionModel().getSelectedItem());
-
+            Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+            deleteSuccess.setTitle("Sikeres törlés!");
+            deleteSuccess.setContentText("A szerelési státusz sikeresen törölve lett az adatbázisból!");
+            deleteSuccess.showAndWait();
         }
     }
 
