@@ -90,7 +90,10 @@ public class RepairController {
         currentRepair.getMechanics().remove(listOfWorkers.getSelectionModel().getSelectedItem());
         Repositories.repairRepository.commitChange(currentRepair);
         listOfWorkers.refresh();
-
+        Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+        deleteSuccess.setTitle("Sikeres törlés!");
+        deleteSuccess.setContentText("A szerelő sikeresen törölve lett az adatbázisból!");
+        deleteSuccess.showAndWait();
     }
 
     @FXML
