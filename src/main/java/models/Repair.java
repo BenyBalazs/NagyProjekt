@@ -38,7 +38,6 @@ public class Repair {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "REPAIR_ID")
-    @Setter(AccessLevel.PRIVATE)
     Integer repairId;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CAR_FK")
@@ -53,7 +52,7 @@ public class Repair {
     RepairState repairState;
     @Column(name = "DESCRIPTION")
     String description;
-    @ManyToMany(mappedBy = "repairs")
+    @ManyToMany(mappedBy = "repairs",fetch = FetchType.EAGER)
     private List<Mechanic> mechanics = new ArrayList<Mechanic>();
 
     @Override
