@@ -7,9 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ListView;
-import javafx.scene.control.SelectionMode;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
@@ -21,6 +19,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.io.OptionalDataException;
+import java.util.Optional;
 
 public class CarsAndOwnersController {
 
@@ -74,7 +74,19 @@ public class CarsAndOwnersController {
 
     @FXML
     void deleteCar(MouseEvent event) {
-        Repositories.carRepository.deleteAndSetConnectionToNull(listOfCars.getSelectionModel().getSelectedItem());
+        Alert confirmDelete = new Alert(Alert.AlertType.CONFIRMATION);
+        confirmDelete.setTitle("Törlés megerősítése!");
+        confirmDelete.setContentText("A törlés visszaállíthatatlanul eltávolítja az objektumot az adatbázisból és anomáliákhoz vezethet! Kérjük győződjön meg arról, hogy az autóhoz nem tartozik szerelés!");
+        ButtonType confirm = new ButtonType("Törölje az adatbázisból!");
+        ButtonType cancel = new ButtonType("Mégse");
+        confirmDelete.getButtonTypes().setAll(confirm,cancel);
+
+        Optional<ButtonType> result = confirmDelete.showAndWait();
+
+        if(result.get() == confirm){
+            logger.trace("A felhasználó törölni kívánta az entitást!");
+            Repositories.carRepository.deleteAndSetConnectionToNull(listOfCars.getSelectionModel().getSelectedItem());
+        }
     }
 
     @FXML
