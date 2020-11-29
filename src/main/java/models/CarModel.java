@@ -15,11 +15,10 @@ public class CarModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Setter(AccessLevel.PRIVATE)
     Integer carModelId;
     String brand;
     String type;
-    @OneToMany(mappedBy = "model")
+    @OneToMany(mappedBy = "model",fetch = FetchType.EAGER)
     List<Car> cars = new ArrayList<>();
 
     @Override
