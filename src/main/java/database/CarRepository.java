@@ -26,16 +26,16 @@ public class CarRepository extends GenericRepository<Car>{
 
     public void deleteAndSetConnectionToNull(Car entity){
 
-        if(!entity.getRepairs().isEmpty()) {
-            for (Repair a : entity.getRepairs()) {
-                a.setCarOnRepair(null);
-                Repositories.repairRepository.commitChange(a);
-            }
-        }
+        entity.setOwner(null);
+        entity.setModel(null);
+
+        entity.getRepairs().clear();
+        Repositories.carRepository.commitChange(entity);
         Repositories.carRepository.simpleDelete(entity);
     }
 
     public List<Car> findEveryCarWithSameOwner(CarOwner owner){
+        logger.trace("Minden autó lekérdezése a tulajdonoshoz!");
         EntityManager em = EmfHelper.getEntityManager();
         CriteriaBuilder cb = em.getCriteriaBuilder();
 
