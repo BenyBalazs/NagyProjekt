@@ -58,7 +58,18 @@ public class RepairController {
                        carModelRepository.getEveryTypeFromGivenBrand(brand.getValue())));
         });
 
+        description.setText(currentRepair.getDescription());
 
+        if(currentRepair.getPrice() != null)
+            price.getValueFactory().setValue(currentRepair.getPrice());
+
+        status.getItems().addAll(Repair.RepairState.values());
+        status.getSelectionModel().select(currentRepair.getRepairState());
+
+        listOfWorkers.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        listOfWorkers.setItems(FXCollections.observableList(currentRepair.getMechanics()));
+
+        pickWorker.getItems().addAll(Repositories.mechanicRepository.findAll());
     }
 
     @FXML
