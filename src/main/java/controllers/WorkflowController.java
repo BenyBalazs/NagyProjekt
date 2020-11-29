@@ -1,14 +1,17 @@
 package controllers;
 
 import database.Repositories;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ListView;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.input.MouseEvent;
 import models.Repair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utility.CarTransfer;
 
 import java.util.Optional;
 
@@ -18,6 +21,12 @@ public class WorkflowController {
 
     @FXML
     private ListView<Repair> listOfRepairs;
+
+    @FXML
+    public void initialize(){
+        listOfRepairs.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        listOfRepairs.setItems(FXCollections.observableList(CarTransfer.carTransfer.getRepairs()));
+    }
 
     @FXML
     void deleteRepair(MouseEvent event) {
