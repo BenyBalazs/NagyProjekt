@@ -41,6 +41,11 @@ public class RepairController {
     private ComboBox<Mechanic> pickWorker;
 
     @FXML
+    public void initialize(){
+
+    }
+
+    @FXML
     void addWorker(MouseEvent event) {
 
     }
