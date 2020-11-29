@@ -23,7 +23,7 @@ public class WorkflowController {
     void deleteRepair(MouseEvent event) {
         Alert confirmDelete = new Alert(Alert.AlertType.CONFIRMATION);
         confirmDelete.setTitle("Törlés megerősítése!");
-        confirmDelete.setContentText("A törlés visszaállíthatatlanul eltávolítja az objektumot az adatbázisból és anomáliákhoz vezethet! Kérjük győződjön meg arról, hogy a szerelés eltávolítódott!");
+        confirmDelete.setContentText("A törlés visszaállíthatatlanul eltávolítja az objektumot az adatbázisból és anomáliákhoz vezethet! Kérjük győződjön meg arról, hogy nincs aktuális munkafolyamat!");
         ButtonType confirm = new ButtonType("Törölje az adatbázisból!");
         ButtonType cancel = new ButtonType("Mégse");
         confirmDelete.getButtonTypes().setAll(confirm,cancel);
@@ -35,7 +35,7 @@ public class WorkflowController {
             Repositories.repairRepository.deleteAndSetConnectionToNull(listOfRepairs.getSelectionModel().getSelectedItem());
             Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
             deleteSuccess.setTitle("Sikeres törlés!");
-            deleteSuccess.setContentText("A szerelési státusz sikeresen törölve lett az adatbázisból!");
+            deleteSuccess.setContentText("A munkafolyamat sikeresen törölve lett az adatbázisból!");
             deleteSuccess.showAndWait();
         }
     }
