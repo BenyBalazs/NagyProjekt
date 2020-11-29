@@ -1,15 +1,13 @@
 package controllers;
 
+import database.Repositories;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.ListView;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import models.Mechanic;
 import models.Repair;
+import utility.RepairTransfer;
 
 public class RepairController {
 
@@ -40,8 +38,26 @@ public class RepairController {
     @FXML
     private ComboBox<Mechanic> pickWorker;
 
+    private Repair currentRepair = RepairTransfer.repairTransfer;
+
     @FXML
     public void initialize(){
+        licencePlate.setText(currentRepair.getCarOnRepair().getLicensePlate());
+        manufacturedDate.setValue(currentRepair.getCarOnRepair().getManufacturedDate());
+        brand.setItems(FXCollections.observableList(Repositories.carModelRepository.getEveryBrandAsStringList()));
+        brand.getSelectionModel().select(currentRepair.getCarOnRepair().getModel().getBrand());
+        type.setItems(FXCollections.
+                observableList(Repositories.
+                        carModelRepository.
+                        getEveryTypeFromGivenBrand(currentRepair.
+                                getCarOnRepair().getModel().getBrand())));
+        type.getSelectionModel().select(currentRepair.
+                getCarOnRepair().getModel().getType());
+        brand.setOnAction((actionEvent) -> {
+               type.setItems(FXCollections.observableList(Repositories.
+                       carModelRepository.getEveryTypeFromGivenBrand(brand.getValue())));
+        });
+
 
     }
 
