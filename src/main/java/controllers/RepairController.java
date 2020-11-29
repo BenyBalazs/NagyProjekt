@@ -5,6 +5,8 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import models.Car;
+import models.CarModel;
 import models.Mechanic;
 import models.Repair;
 import utility.RepairTransfer;
@@ -88,6 +90,17 @@ public class RepairController {
 
     @FXML
     void saveEditCar(MouseEvent event) {
+        Car carOnRepair = currentRepair.getCarOnRepair();
+        CarModel model = Repositories.carModelRepository.getModelByBrandAndType(brand.getValue(),type.getValue());
+
+        if(model == null){
+            model = new CarModel();
+            model.setBrand(brand.getValue());
+            model.setType(type.getValue());
+            Repositories.carModelRepository.createNew(model);
+        }
+
+
 
     }
 
