@@ -46,7 +46,10 @@ public class EditWorkerController {
         MechanicTransfer.mechanicTransfer.setEmail(workerEmail.getText());
         MechanicTransfer.mechanicTransfer.setDateOfBirth(workerBirthDate.getValue());
         Repositories.mechanicRepository.commitChange(MechanicTransfer.mechanicTransfer);
-
+        Alert saveSuccess = new Alert(Alert.AlertType.INFORMATION);
+        saveSuccess.setTitle("Sikeres mentés!");
+        saveSuccess.setContentText("A szerelő adatai sikeresen módosításra kerültek!");
+        saveSuccess.showAndWait();
     }
 
     @FXML
