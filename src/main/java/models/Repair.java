@@ -19,7 +19,7 @@ import java.util.Set;
 public class Repair {
 
     public static enum RepairState{
-        UNDER_REPAIR("Szerelés alatt."),
+        UNDER_REPAIR("Szerelés alatt"),
         FINISHED("Elkészült"),
         PAID("Fizetve");
 
