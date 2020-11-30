@@ -32,6 +32,12 @@ public class RepairController {
     private Spinner<Integer> price;
 
     @FXML
+    private DatePicker startOfRepair;
+
+    @FXML
+    private DatePicker endOfRepair;
+
+    @FXML
     private ComboBox<Repair.RepairState> status;
 
     @FXML
