@@ -63,7 +63,6 @@ public class NewCarController {
         repair.setDescription(description.getText());
         repair.setRepairState(Repair.RepairState.UNDER_REPAIR);
         Repositories.repairRepository.createNew(repair);
-
         Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
         deleteSuccess.setTitle("Sikeres atfeltöltés!");
         deleteSuccess.setContentText("Az autó és a tulajdonos adatai elmentve. Az ablak az OK gomb megnyomása után be fog záródni.");
