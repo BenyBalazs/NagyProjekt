@@ -102,7 +102,7 @@ public class RepairController {
         listOfWorkers.refresh();
         Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
         deleteSuccess.setTitle("Sikeres törlés!");
-        deleteSuccess.setContentText("A szerelő sikeresen törölve lett az adatbázisból!");
+        deleteSuccess.setContentText("A zsrelő el lett távolítva ebből a szerelésből!");
         deleteSuccess.showAndWait();
     }
 
