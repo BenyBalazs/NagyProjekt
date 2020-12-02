@@ -78,11 +78,15 @@ public class RepairController {
         listOfWorkers.setItems(FXCollections.observableList(currentRepair.getMechanics()));
 
         pickWorker.getItems().addAll(Repositories.mechanicRepository.findAll());
+        
+        startOfRepair.setValue(currentRepair.getStartOfRepair());
+        if(currentRepair.getEndOfRepair() != null)
+            endOfRepair.setValue(currentRepair.getEndOfRepair());
     }
 
     @FXML
     void addWorker(MouseEvent event) {
-        currentRepair.getMechanics().add(listOfWorkers.getSelectionModel().getSelectedItem());
+        currentRepair.getMechanics().add(pickWorker.getSelectionModel().getSelectedItem());
         Repositories.repairRepository.commitChange(currentRepair);
         listOfWorkers.refresh();
         Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
@@ -123,6 +127,8 @@ public class RepairController {
         currentRepair.setDescription(description.getText());
         currentRepair.setPrice(price.getValue());
         currentRepair.setRepairState(status.getValue());
+        currentRepair.setEndOfRepair(endOfRepair.getValue());
+        currentRepair.setStartOfRepair(startOfRepair.getValue());
 
         Repositories.repairRepository.commitChange(currentRepair);
 

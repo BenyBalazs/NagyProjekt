@@ -8,6 +8,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import models.Mechanic;
+import javafx.stage.Stage;
+import javafx.scene.control.Alert;
 
 public class NewWorkerController {
 

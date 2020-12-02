@@ -41,7 +41,6 @@ public class WorkerController {
         ButtonType confirm = new ButtonType("Törölje az adatbázisból!");
         ButtonType cancel = new ButtonType("Mégse");
         confirmDelete.getButtonTypes().setAll(confirm,cancel);
-        listOfWorkers.refresh();
 
         Optional<ButtonType> result = confirmDelete.showAndWait();
 
@@ -52,6 +51,7 @@ public class WorkerController {
             deleteSuccess.setTitle("Sikeres törlés!");
             deleteSuccess.setContentText("A szerelő sikeresen törölve lett az adatbázisból!");
             deleteSuccess.showAndWait();
+            listOfWorkers.refresh();
         }
     }
 
