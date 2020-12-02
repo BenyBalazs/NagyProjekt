@@ -91,7 +91,7 @@ public class RepairController {
         listOfWorkers.refresh();
         Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
         deleteSuccess.setTitle("Sikeres hozzáadás!");
-        deleteSuccess.setContentText("A javítás adatai sikeresen hozzá lett adva az adatbázishoz!");
+        deleteSuccess.setContentText("Új szerelő lett hozzáadva ehhez a szereléshez!");
         deleteSuccess.showAndWait();
     }
 
