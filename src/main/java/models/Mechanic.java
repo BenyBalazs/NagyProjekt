@@ -25,7 +25,7 @@ public class Mechanic {
     String phoneNum;
     LocalDate dateOfBirth;
 
-    @ManyToMany(mappedBy = "mechanics",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "mechanics",fetch = FetchType.EAGER,cascade = {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST})
     private List<Repair> repairs = new ArrayList<Repair>();
 
     @Override
