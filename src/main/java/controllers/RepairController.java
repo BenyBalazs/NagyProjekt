@@ -82,7 +82,7 @@ public class RepairController {
 
     @FXML
     void addWorker(MouseEvent event) {
-        currentRepair.getMechanics().add(listOfWorkers.getSelectionModel().getSelectedItem());
+        currentRepair.getMechanics().add(pickWorker.getSelectionModel().getSelectedItem());
         Repositories.repairRepository.commitChange(currentRepair);
         listOfWorkers.refresh();
         Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
