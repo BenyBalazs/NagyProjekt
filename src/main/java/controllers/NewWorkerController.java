@@ -29,6 +29,11 @@ public class NewWorkerController {
         mechanic.setPhoneNum(workerPhoneNumber.getText());
         mechanic.setDateOfBirth(workerBirthDate.getValue());
         Repositories.mechanicRepository.createNew(mechanic);
+        
+        Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+        deleteSuccess.setTitle("Új dolgozó sikeresen hozzáadva");
+        deleteSuccess.setContentText("Az új. Az ablak az OK gomb megnyomása után be fog záródni");
+        deleteSuccess.showAndWait();
     }
 
 }
