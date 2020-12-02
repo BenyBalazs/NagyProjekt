@@ -208,3 +208,8 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    |  T18 | Hibás adatok esetén a program figyelmeztet.  |
    |  T19 | Üresenhagyott mezők esetén a program figyelmeztet. |
    |  T20 | Továbbgomb megnyomására a program továbblép az autó hozzádására.  |
+   |  T21 | A beviteli mezők szerkeszthetőek az új aztó hozzádásánál.  |
+   |  T22 | Mentésgom megnyomása esetén a program feltölti az adatbázisba az entitásokat  |
+   |  T23 | A mentés gomb megnyomása után a program felugró ablakban informálja a felhasználót.  |
+   |  T24 | Párbeszédablak bezárása után a program bezárja a hozzádásablakot  |
+   |  T25 | A vezérlés visszaáll a főmenüre.  |
