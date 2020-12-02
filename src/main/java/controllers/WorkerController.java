@@ -71,7 +71,9 @@ public class WorkerController {
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
             stage.show();
-            stage.setOnCloseRequest(windowEvent -> MechanicTransfer.mechanicTransfer = null);
+            stage.setOnCloseRequest((windowEvent) -> {MechanicTransfer.mechanicTransfer = null;
+            listOfWorkers.refresh();
+            });
         } catch (IOException ex) {
             logger.error("A hiba forrása {}", ex.toString());
         }
