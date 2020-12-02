@@ -194,3 +194,17 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    |  T4 | A legenerálja az adatbázist amennyiben az nem létezik  |
    |  T5 | A program helyreállítja az adatbázist ha az hiányos  |
    |  T6 | A program grafikus felülete megjelenik  |
+   |  T7 | A program a kívánt css-el jelenik meg |
+   |  T8 | A programot lehet méretezni  |
+   |  T9 | A program a felvétel gombra kattintva a gomb elsötétül.  | 
+   |  T10 | A hozzádás ablak megnyílik  |
+   |  T11 | A hozzádásablak nem méretezhető  |
+   |  T12 | A hozzádásablak a megfelelő stíluslappal jelenik meg.  |
+   |  T13 | A hozzádásablak mögött lévő főmenü nem kattintható  |
+   |  T14 | A meglévő tulaj/ új tulaj gombok közül csak az egyik választható |
+   |  T15 | Meglévő tulaj esetén az új tulaj mezők elsötétülnek |
+   |  T16 | új tulaj esetén a beviteli mezők aktívvá válnak.  |
+   |  T17 | A beviteli mezőkbe lehet adatot bevinni.  |
+   |  T18 | Hibás adatok esetén a program figyelmeztet.  |
+   |  T19 | Üresenhagyott mezők esetén a program figyelmeztet. |
+   |  T20 | Továbbgomb megnyomására a program továbblép az autó hozzádására.  |
