@@ -52,7 +52,7 @@ public class Repair {
     RepairState repairState;
     @Column(name = "DESCRIPTION")
     String description;
-    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER,cascade = {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST})
     @JoinTable(name = "REPAIRS",
             joinColumns = @JoinColumn(name = "REPAIR_ID"),
             inverseJoinColumns = @JoinColumn(name = "MECHANIC_ID"))
