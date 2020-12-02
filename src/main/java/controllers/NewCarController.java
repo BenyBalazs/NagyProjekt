@@ -5,6 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import models.Car;
 import models.CarModel;
 import models.CarOwner;
@@ -62,11 +63,15 @@ public class NewCarController {
         repair.setStartOfRepair(LocalDate.now());
         repair.setDescription(description.getText());
         repair.setRepairState(Repair.RepairState.UNDER_REPAIR);
+
         Repositories.repairRepository.createNew(repair);
         Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
         deleteSuccess.setTitle("Sikeres atfeltöltés!");
         deleteSuccess.setContentText("Az autó és a tulajdonos adatai elmentve. Az ablak az OK gomb megnyomása után be fog záródni.");
         deleteSuccess.showAndWait();
+
+        Stage stage = (Stage) description.getScene().getWindow();
+        stage.close();
     }
 
 }
