@@ -78,6 +78,10 @@ public class RepairController {
         listOfWorkers.setItems(FXCollections.observableList(currentRepair.getMechanics()));
 
         pickWorker.getItems().addAll(Repositories.mechanicRepository.findAll());
+        
+        startOfRepair.setValue(currentRepair.getStartOfRepair());
+        if(currentRepair.getEndOfRepair() != null)
+            endOfRepair.setValue(currentRepair.getEndOfRepair());
     }
 
     @FXML
