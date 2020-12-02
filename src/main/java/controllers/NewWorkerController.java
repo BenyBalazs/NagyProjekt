@@ -34,6 +34,9 @@ public class NewWorkerController {
         deleteSuccess.setTitle("Új dolgozó sikeresen hozzáadva");
         deleteSuccess.setContentText("Az új. Az ablak az OK gomb megnyomása után be fog záródni");
         deleteSuccess.showAndWait();
+        
+        Stage stage = (Stage) workerName.getScene().getWindow();
+        stage.close();
     }
 
 }
