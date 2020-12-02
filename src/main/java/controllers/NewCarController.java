@@ -3,10 +3,7 @@ package controllers;
 import database.Repositories;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import models.Car;
 import models.CarModel;
@@ -66,6 +63,11 @@ public class NewCarController {
         repair.setDescription(description.getText());
         repair.setRepairState(Repair.RepairState.UNDER_REPAIR);
         Repositories.repairRepository.createNew(repair);
+
+        Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+        deleteSuccess.setTitle("Sikeres atfeltöltés!");
+        deleteSuccess.setContentText("Az autó és a tulajdonos adatai elmentve. Az ablak az OK gomb megnyomása után be fog záródni.");
+        deleteSuccess.showAndWait();
     }
 
 }
