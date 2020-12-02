@@ -127,6 +127,8 @@ public class RepairController {
         currentRepair.setDescription(description.getText());
         currentRepair.setPrice(price.getValue());
         currentRepair.setRepairState(status.getValue());
+        currentRepair.setEndOfRepair(endOfRepair.getValue());
+        currentRepair.setStartOfRepair(startOfRepair.getValue());
 
         Repositories.repairRepository.commitChange(currentRepair);
 
