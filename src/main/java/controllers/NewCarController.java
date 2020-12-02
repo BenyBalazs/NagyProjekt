@@ -70,7 +70,7 @@ public class NewCarController {
         deleteSuccess.setContentText("Az autó és a tulajdonos adatai elmentve. Az ablak az OK gomb megnyomása után be fog záródni.");
         deleteSuccess.showAndWait();
 
-        Stage stage = (Stage) description.getScene().getWindow();
+        Stage stage = (Stage) brand.getScene().getWindow();
         stage.close();
     }
 
