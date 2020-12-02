@@ -24,10 +24,8 @@ public class Mechanic {
     String email;
     String phoneNum;
     LocalDate dateOfBirth;
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "REPAIRS",
-            joinColumns = @JoinColumn(name = "REPAIR_ID"),
-            inverseJoinColumns = @JoinColumn(name = "MECHANIC_ID"))
+
+    @ManyToMany(mappedBy = "mechanics",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     private List<Repair> repairs = new ArrayList<Repair>();
 
     @Override
