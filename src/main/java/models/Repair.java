@@ -52,7 +52,10 @@ public class Repair {
     RepairState repairState;
     @Column(name = "DESCRIPTION")
     String description;
-    @ManyToMany(mappedBy = "repairs",fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @JoinTable(name = "REPAIRS",
+            joinColumns = @JoinColumn(name = "REPAIR_ID"),
+            inverseJoinColumns = @JoinColumn(name = "MECHANIC_ID"))
     private List<Mechanic> mechanics = new ArrayList<Mechanic>();
 
     @Override
