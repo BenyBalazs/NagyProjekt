@@ -223,4 +223,12 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    |  T33 | Az autó törlése gombra bejön a megerősítő ablak, hogy törölni akarjuk-e az autót.  |
    |  T34 | Az autó törlésének megerősítése esetén, törlődik az autó.  |
    |  T35 | Az autó és munkafolyamatok szerkesztése gombra kattintva megnyílik egy új ablakban a munkafolyamatok kiválasztására szolgáló felület.  |
-   
+   |  T36 | A tulaj szerkesztő felülete megnyitáskor betölti a tulaj adatait.  |
+   |  T37 | Lehetőség van a tulaj nevének módosítására.  |
+   |  T38 | Lehetőség van a tulaj címének módosítására.  |
+   |  T39 | Lehetőség van a tulaj telefonszámának módosítására.  |
+   |  T40 | Lehetőség van a tulaj email címének módosítására.  |
+   |  T41 | Lehetőség van a tulaj születési dátumának módosítására.  |
+   |  T42 | A mentés gombra kattinta menti a tulaj módosított adatait és egy felugró ablakban értesít a sikeres mentésről.  |
+   |  T43 | A tulaj törlése gombra kattintva egy felugró ablak megkérdezi hogy biztosan törli-e az adatokat.  |
+   |  T44 | Ha megerősíti a felhasználó, akkor törli a tulaj adatait.  |
