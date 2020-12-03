@@ -213,3 +213,33 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    |  T23 | A mentés gomb megnyomása után a program felugró ablakban informálja a felhasználót.  |
    |  T24 | Párbeszédablak bezárása után a program bezárja a hozzádásablakot  |
    |  T25 | A vezérlés visszaáll a főmenüre.  |
+   |  T26 | A program az autók és tulajok gombra kattintva a gomb elsötétül.  |
+   |  T27 | A program az autók és tulajok gombra kattintva betölti az autók és tulajok kezelésére szolgáló felületet.  |
+   |  T28 | Az autók és tulajok felület a kívánt stílussal jelenik meg.  |
+   |  T29 | A listába megfelelően betöltenek a tulajdonosok.  |
+   |  T30 | A listába egy tulajra duplán kattintva megjelennek az autói a mellette lévő listában.  |
+   |  T31 | A kereső mezőbe beírva egy nevet és a keresés gombra kattintva, a listában megjelenik az adott tulaj.  |
+   |  T32 | A tulaj szerkesztése gombra kattintva megnyílik egy új ablakban a tulaj adatainak szerkesztésére szolgáló felület.  |
+   |  T33 | Az autó törlése gombra bejön a megerősítő ablak, hogy törölni akarjuk-e az autót.  |
+   |  T34 | Az autó törlésének megerősítése esetén, törlődik az autó.  |
+   |  T35 | Az autó és munkafolyamatok szerkesztése gombra kattintva megnyílik egy új ablakban a munkafolyamatok kiválasztására szolgáló felület.  |
+   |  T36 | A tulaj szerkesztő felülete megnyitáskor betölti a tulaj adatait.  |
+   |  T37 | Lehetőség van a tulaj nevének módosítására.  |
+   |  T38 | Lehetőség van a tulaj címének módosítására.  |
+   |  T39 | Lehetőség van a tulaj telefonszámának módosítására.  |
+   |  T40 | Lehetőség van a tulaj email címének módosítására.  |
+   |  T41 | Lehetőség van a tulaj születési dátumának módosítására.  |
+   |  T42 | A mentés gombra kattinta menti a tulaj módosított adatait és egy felugró ablakban értesít a sikeres mentésről.  |
+   |  T43 | A tulaj törlése gombra kattintva egy felugró ablak megkérdezi hogy biztosan törli-e az adatokat.  |
+   |  T44 | Ha megerősíti a felhasználó, akkor törli a tulaj adatait.  |
+   |  T45 | A munkafolyamok felület amikor megnyílik betöltődnek az autó munkafolyamatai.  |
+   |  T46 | A munkafolyamat kiválasztása után a munkafolyamat törlése gombra kattintva egy fugró ablakban megerősítés után, törlődik a munkafolyamat.  |
+   |  T47 | A munkafolyamat kiválasztása után a szerkesztés gombra kattintva megnyílik a munkafolyamat szerkesztése felület.  |
+   |  T48 | A munkafolyamat szerkesztése felületen a megnyitáskor betölt az autó adatai.  |
+   |  T49 | Lehetőség van az autó adatainak módosítására.  |
+   |  T50 | Lehetőség van a szerelés költségeinek a megadására.  |
+   |  T51 | Lehetőség van a szerelés státuszainak módosítására.  |
+   |  T52 | Egy listába megjeleníti a szerelőket, akik dolgoznak az autón.  |
+   |  T53 | Lehetőség van új szerelő hozzáadására a szerelők közé.  |
+   |  T54 | Lehetőség van szerelőt eltávolítani a munkafolyamatból.  |
+   |  T55 | A mentésre kattintva menti a munkafolyamat módosításait.  |
