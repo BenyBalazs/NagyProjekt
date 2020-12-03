@@ -232,3 +232,14 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    |  T42 | A mentés gombra kattinta menti a tulaj módosított adatait és egy felugró ablakban értesít a sikeres mentésről.  |
    |  T43 | A tulaj törlése gombra kattintva egy felugró ablak megkérdezi hogy biztosan törli-e az adatokat.  |
    |  T44 | Ha megerősíti a felhasználó, akkor törli a tulaj adatait.  |
+   |  T45 | A munkafolyamok felület amikor megnyílik betöltődnek az autó munkafolyamatai.  |
+   |  T46 | A munkafolyamat kiválasztása után a munkafolyamat törlése gombra kattintva egy fugró ablakban megerősítés után, törlődik a munkafolyamat.  |
+   |  T47 | A munkafolyamat kiválasztása után a szerkesztés gombra kattintva megnyílik a munkafolyamat szerkesztése felület.  |
+   |  T48 | A munkafolyamat szerkesztése felületen a megnyitáskor betölt az autó adatai.  |
+   |  T49 | Lehetőség van az autó adatainak módosítására.  |
+   |  T50 | Lehetőség van a szerelés költségeinek a megadására.  |
+   |  T51 | Lehetőség van a szerelés státuszainak módosítására.  |
+   |  T52 | Egy listába megjeleníti a szerelőket, akik dolgoznak az autón.  |
+   |  T53 | Lehetőség van új szerelő hozzáadására a szerelők közé.  |
+   |  T54 | Lehetőség van szerelőt eltávolítani a munkafolyamatból.  |
+   |  T55 | A mentésre kattintva menti a munkafolyamat módosításait.  |
