@@ -78,6 +78,9 @@ public class RepairController {
         listOfWorkers.setItems(FXCollections.observableList(currentRepair.getMechanics()));
 
         pickWorker.getItems().addAll(Repositories.mechanicRepository.findAll());
+
+        startOfRepair.setValue(currentRepair.getStartOfRepair());
+        endOfRepair.setValue(currentRepair.getEndOfRepair());
     }
 
     @FXML
@@ -123,6 +126,8 @@ public class RepairController {
         currentRepair.setDescription(description.getText());
         currentRepair.setPrice(price.getValue());
         currentRepair.setRepairState(status.getValue());
+        currentRepair.setStartOfRepair(startOfRepair.getValue());
+        currentRepair.setEndOfRepair(startOfRepair.getValue());
 
         Repositories.repairRepository.commitChange(currentRepair);
 
