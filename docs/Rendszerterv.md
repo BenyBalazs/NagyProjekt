@@ -213,3 +213,14 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    |  T23 | A mentés gomb megnyomása után a program felugró ablakban informálja a felhasználót.  |
    |  T24 | Párbeszédablak bezárása után a program bezárja a hozzádásablakot  |
    |  T25 | A vezérlés visszaáll a főmenüre.  |
+   |  T26 | A program az autók és tulajok gombra kattintva a gomb elsötétül.  |
+   |  T27 | A program az autók és tulajok gombra kattintva betölti az autók és tulajok kezelésére szolgáló felületet.  |
+   |  T28 | Az autók és tulajok felület a kívánt stílussal jelenik meg.  |
+   |  T29 | A listába megfelelően betöltenek a tulajdonosok.  |
+   |  T30 | A listába egy tulajra duplán kattintva megjelennek az autói a mellette lévő listában.  |
+   |  T31 | A kereső mezőbe beírva egy nevet és a keresés gombra kattintva, a listában megjelenik az adott tulaj.  |
+   |  T32 | A tulaj szerkesztése gombra kattintva megnyílik egy új ablakban a tulaj adatainak szerkesztésére szolgáló felület.  |
+   |  T33 | Az autó törlése gombra bejön a megerősítő ablak, hogy törölni akarjuk-e az autót.  |
+   |  T34 | Az autó törlésének megerősítése esetén, törlődik az autó.  |
+   |  T35 | Az autó és munkafolyamatok szerkesztése gombra kattintva megnyílik egy új ablakban a munkafolyamatok kiválasztására szolgáló felület.  |
+   
