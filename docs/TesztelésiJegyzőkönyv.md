@@ -22,3 +22,5 @@
 |  T43 | A tulaj törlése gombra kattintva egy felugró ablak megkérdezi hogy biztosan törli-e az adatokat.  | Sikeres  | Csontos Róbert  |
 |  T44 | Ha megerősíti a felhasználó, akkor törli a tulaj adatait.  | Sikeres  | Csontos Róbert  |
 |  T45 | A munkafolyamok felület amikor megnyílik betöltődnek az autó munkafolyamatai.  | Sikeres  | Csontos Róbert  |
+|  T46 | A munkafolyamat kiválasztása után a munkafolyamat törlése gombra kattintva egy fugró ablakban megerősítés után, törlődik a munkafolyamat.  | Sikeres  | Csontos Róbert  |
+|  T47 | A munkafolyamat kiválasztása után a szerkesztés gombra kattintva megnyílik a munkafolyamat szerkesztése felület.  | Sikeres  | Csontos Róbert  |
