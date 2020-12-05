@@ -24,3 +24,4 @@
 |  T45 | A munkafolyamok felület amikor megnyílik betöltődnek az autó munkafolyamatai.  | Sikeres  | Csontos Róbert  |
 |  T46 | A munkafolyamat kiválasztása után a munkafolyamat törlése gombra kattintva egy fugró ablakban megerősítés után, törlődik a munkafolyamat.  | Sikeres  | Csontos Róbert  |
 |  T47 | A munkafolyamat kiválasztása után a szerkesztés gombra kattintva megnyílik a munkafolyamat szerkesztése felület.  | Sikeres  | Csontos Róbert  |
+|  T48 | A munkafolyamat szerkesztése felületen a megnyitáskor betölt az autó adatai.  | Sikeres  | Csontos Róbert  |
