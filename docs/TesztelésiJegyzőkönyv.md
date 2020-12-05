@@ -29,3 +29,6 @@
 |  T50 | Lehetőség van a szerelés költségeinek a megadására.  | Sikeres  | Csontos Róbert  |
 |  T51 | Lehetőség van a szerelés státuszainak módosítására.  | Sikeres  | Csontos Róbert  |
 |  T52 | Egy listába megjeleníti a szerelőket, akik dolgoznak az autón.  | Sikeres  | Csontos Róbert  |
+|  T53 | Lehetőség van új szerelő hozzáadására a szerelők közé.  | Sikeres  | Csontos Róbert  |
+|  T54 | Lehetőség van szerelőt eltávolítani a munkafolyamatból.  | Sikeres  | Csontos Róbert  |
+|  T55 | A mentésre kattintva menti a munkafolyamat módosításait.  | Sikeres  | Csontos Róbert  |
