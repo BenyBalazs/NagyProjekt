@@ -21,3 +21,4 @@
 |  T42 | A mentés gombra kattinta menti a tulaj módosított adatait és egy felugró ablakban értesít a sikeres mentésről.  | Sikeres  | Csontos Róbert  |
 |  T43 | A tulaj törlése gombra kattintva egy felugró ablak megkérdezi hogy biztosan törli-e az adatokat.  | Sikeres  | Csontos Róbert  |
 |  T44 | Ha megerősíti a felhasználó, akkor törli a tulaj adatait.  | Sikeres  | Csontos Róbert  |
+|  T45 | A munkafolyamok felület amikor megnyílik betöltődnek az autó munkafolyamatai.  | Sikeres  | Csontos Róbert  |
