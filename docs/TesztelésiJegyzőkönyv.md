@@ -12,3 +12,4 @@
 |  T33 | Az autó törlése gombra bejön a megerősítő ablak, hogy törölni akarjuk-e az autót.  | Sikeres  | Csontos Róbert  |
 |  T34 | Az autó törlésének megerősítése esetén, törlődik az autó.  | Sikeres  | Csontos Róbert  |
 |  T35 | Az autó és munkafolyamatok szerkesztése gombra kattintva megnyílik egy új ablakban a munkafolyamatok kiválasztására szolgáló felület.  | Sikeres  | Csontos Róbert  |
+|  T36 | A tulaj szerkesztő felülete megnyitáskor betölti a tulaj adatait.  | Sikeres  | Csontos Róbert  |
