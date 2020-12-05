@@ -13,3 +13,8 @@
 |  T34 | Az autó törlésének megerősítése esetén, törlődik az autó.  | Sikeres  | Csontos Róbert  |
 |  T35 | Az autó és munkafolyamatok szerkesztése gombra kattintva megnyílik egy új ablakban a munkafolyamatok kiválasztására szolgáló felület.  | Sikeres  | Csontos Róbert  |
 |  T36 | A tulaj szerkesztő felülete megnyitáskor betölti a tulaj adatait.  | Sikeres  | Csontos Róbert  |
+|  T37 | Lehetőség van a tulaj nevének módosítására.  | Sikeres  | Csontos Róbert  |
+|  T38 | Lehetőség van a tulaj címének módosítására.  | Sikeres  | Csontos Róbert  |
+|  T39 | Lehetőség van a tulaj telefonszámának módosítására.  | Sikeres  | Csontos Róbert  |
+|  T40 | Lehetőség van a tulaj email címének módosítására.  | Sikeres  | Csontos Róbert  |
+|  T41 | Lehetőség van a tulaj születési dátumának módosítására.  | Sikeres  | Csontos Róbert  |
