@@ -10,6 +10,11 @@
 |  T6 | A program grafikus felülete megjelenik  | Sikeres  | Benyovszki Balázs  |
 |  T7 | A program a kívánt css-el jelenik meg | Sikeres  | Benyovszki Balázs  |
 |  T8 | A programot lehet méretezni  | Sikeres  | Benyovszki Balázs  |
+|  T9 | A program a felvétel gombra kattintva a gomb elsötétül.  | Sikeres  | Benyovszki Balázs  |
+|  T10 | A hozzádás ablak megnyílik  | Sikeres  | Benyovszki Balázs  |
+|  T11 | A hozzádásablak nem méretezhető  | Sikeres  | Benyovszki Balázs  |
+|  T12 | A hozzádásablak a megfelelő stíluslappal jelenik meg.  | Sikeres  | Benyovszki Balázs  |
+|  T13 | A hozzádásablak mögött lévő főmenü nem kattintható  | Sikeres  | Benyovszki Balázs  |
 |  T26 | A program az autók és tulajok gombra kattintva a gomb elsötétül.  | Sikeres  | Csontos Róbert  |
 |  T27 | A program az autók és tulajok gombra kattintva betölti az autók és tulajok kezelésére szolgáló felületet.  | Sikeres  | Csontos Róbert  |
 |  T28 | Az autók és tulajok felület a kívánt stílussal jelenik meg.  | Sikeres  | Csontos Róbert  |
