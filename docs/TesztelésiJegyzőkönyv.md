@@ -7,6 +7,9 @@
 |  T3 | A program leellenörzi az adatbázist  | Sikeres  | Benyovszki Balázs  |
 |  T4 | A legenerálja az adatbázist amennyiben az nem létezik  | Sikeres  | Benyovszki Balázs  |
 |  T5 | A program helyreállítja az adatbázist ha az hiányos  | Sikeres  | Benyovszki Balázs  |
+|  T6 | A program grafikus felülete megjelenik  | Sikeres  | Benyovszki Balázs  |
+|  T7 | A program a kívánt css-el jelenik meg | Sikeres  | Benyovszki Balázs  |
+|  T8 | A programot lehet méretezni  | Sikeres  | Benyovszki Balázs  |
 |  T26 | A program az autók és tulajok gombra kattintva a gomb elsötétül.  | Sikeres  | Csontos Róbert  |
 |  T27 | A program az autók és tulajok gombra kattintva betölti az autók és tulajok kezelésére szolgáló felületet.  | Sikeres  | Csontos Róbert  |
 |  T28 | Az autók és tulajok felület a kívánt stílussal jelenik meg.  | Sikeres  | Csontos Róbert  |
