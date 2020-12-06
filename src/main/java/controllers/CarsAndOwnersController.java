@@ -70,7 +70,8 @@ public class CarsAndOwnersController {
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
             stage.show();
-            stage.setOnCloseRequest(windowEvent -> OwnerTransfer.ownerTransfer = null);
+            stage.setOnCloseRequest((windowEvent) -> {OwnerTransfer.ownerTransfer = null;
+            listOfOwners.refresh();});
         } catch (IOException ex) {
             logger.error("A hiba forrása {}", ex.toString());
         }
@@ -94,6 +95,7 @@ public class CarsAndOwnersController {
             deleteSuccess.setTitle("Sikeres törlés!");
             deleteSuccess.setContentText("Az autó törölve lett az adatbázisból!");
             deleteSuccess.showAndWait();
+            listOfCars.refresh();
         }
     }
 
@@ -114,7 +116,8 @@ public class CarsAndOwnersController {
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
             stage.show();
-            stage.setOnCloseRequest(windowEvent -> CarTransfer.carTransfer = null);
+            stage.setOnCloseRequest((windowEvent) -> {CarTransfer.carTransfer = null;
+            listOfCars.refresh();});
         } catch (IOException ex) {
             logger.error("A hiba forrása {}", ex.toString());
         }
