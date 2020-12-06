@@ -55,6 +55,7 @@ public class WorkflowController {
             deleteSuccess.setTitle("Sikeres törlés!");
             deleteSuccess.setContentText("A munkafolyamat sikeresen törölve lett az adatbázisból!");
             deleteSuccess.showAndWait();
+            listOfRepairs.refresh();
         }
     }
 
@@ -73,7 +74,8 @@ public class WorkflowController {
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(Stage.getWindows().stream().filter(Window::isShowing).findFirst().get());
             stage.show();
-            stage.setOnCloseRequest(windowEvent -> RepairTransfer.repairTransfer = null);
+            stage.setOnCloseRequest((windowEvent) -> {RepairTransfer.repairTransfer = null;
+            listOfRepairs.refresh();});
         } catch (IOException ex) {
             logger.error("A hiba forrása {}", ex.toString());
         }
