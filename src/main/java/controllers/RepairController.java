@@ -101,7 +101,7 @@ public class RepairController {
         listOfWorkers.refresh();
         Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
         deleteSuccess.setTitle("Sikeres törlés!");
-        deleteSuccess.setContentText("A zsrelő el lett távolítva ebből a szerelésből!");
+        deleteSuccess.setContentText("A szrelő el lett távolítva ebből a szerelésből!");
         deleteSuccess.showAndWait();
     }
 
@@ -130,6 +130,11 @@ public class RepairController {
         currentRepair.setEndOfRepair(startOfRepair.getValue());
 
         Repositories.repairRepository.commitChange(currentRepair);
+
+        Alert deleteSuccess = new Alert(Alert.AlertType.INFORMATION);
+        deleteSuccess.setTitle("Sikeres mentés!");
+        deleteSuccess.setContentText("A szerelés adatai sikeresen módosítva lettek!");
+        deleteSuccess.showAndWait();
 
     }
 
