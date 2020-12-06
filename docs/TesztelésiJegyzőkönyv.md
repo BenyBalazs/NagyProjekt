@@ -15,6 +15,13 @@
 |  T11 | A hozzádásablak nem méretezhető  | Sikeres  | Benyovszki Balázs  |
 |  T12 | A hozzádásablak a megfelelő stíluslappal jelenik meg.  | Sikeres  | Benyovszki Balázs  |
 |  T13 | A hozzádásablak mögött lévő főmenü nem kattintható  | Sikeres  | Benyovszki Balázs  |
+|  T14 | A meglévő tulaj/ új tulaj gombok közül csak az egyik választható | Sikeres  | Benyovszki Balázs  |
+|  T15 | Meglévő tulaj esetén az új tulaj mezők elsötétülnek | Sikeres  | Benyovszki Balázs  |
+|  T16 | új tulaj esetén a beviteli mezők aktívvá válnak.  | Sikeres  | Benyovszki Balázs  |
+|  T17 | A beviteli mezőkbe lehet adatot bevinni.  | Sikeres  | Benyovszki Balázs  |
+|  T18 | Hibás adatok esetén a program figyelmeztet.  | Sikeres  | Benyovszki Balázs  |
+|  T19 | Üresenhagyott mezők esetén a program figyelmeztet. | Sikeres  | Benyovszki Balázs  |
+|  T20 | Továbbgomb megnyomására a program továbblép az autó hozzádására.  | Sikeres  | Benyovszki Balázs  |
 |  T26 | A program az autók és tulajok gombra kattintva a gomb elsötétül.  | Sikeres  | Csontos Róbert  |
 |  T27 | A program az autók és tulajok gombra kattintva betölti az autók és tulajok kezelésére szolgáló felületet.  | Sikeres  | Csontos Róbert  |
 |  T28 | Az autók és tulajok felület a kívánt stílussal jelenik meg.  | Sikeres  | Csontos Róbert  |
