@@ -22,6 +22,11 @@
 |  T18 | Hibás adatok esetén a program figyelmeztet.  | Sikeres  | Benyovszki Balázs  |
 |  T19 | Üresenhagyott mezők esetén a program figyelmeztet. | Sikeres  | Benyovszki Balázs  |
 |  T20 | Továbbgomb megnyomására a program továbblép az autó hozzádására.  | Sikeres  | Benyovszki Balázs  |
+|  T21 | A beviteli mezők szerkeszthetőek az új aztó hozzádásánál.  | Sikeres  | Benyovszki Balázs  |
+|  T22 | Mentésgom megnyomása esetén a program feltölti az adatbázisba az entitásokat  | Sikeres  | Benyovszki Balázs  |
+|  T23 | A mentés gomb megnyomása után a program felugró ablakban informálja a felhasználót.  | Sikeres  | Benyovszki Balázs  |
+|  T24 | Párbeszédablak bezárása után a program bezárja a hozzádásablakot  | Sikeres  | Benyovszki Balázs  |
+|  T25 | A vezérlés visszaáll a főmenüre.  | Sikeres  | Benyovszki Balázs  |
 |  T26 | A program az autók és tulajok gombra kattintva a gomb elsötétül.  | Sikeres  | Csontos Róbert  |
 |  T27 | A program az autók és tulajok gombra kattintva betölti az autók és tulajok kezelésére szolgáló felületet.  | Sikeres  | Csontos Róbert  |
 |  T28 | Az autók és tulajok felület a kívánt stílussal jelenik meg.  | Sikeres  | Csontos Róbert  |
