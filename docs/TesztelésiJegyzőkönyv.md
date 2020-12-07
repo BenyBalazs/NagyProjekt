@@ -61,3 +61,4 @@
 |  T57 | Amennyiben a dolgozó felvétel gomb fölé visszük a cousor-t abban az esetben a szöveg pirosra vált   | Sikeres  | Kis Patrik  |
 |  T58 | A dolgozó felvétel gombra kattintva felugrik a megfelelő ablak   | Sikeres  | Kis Patrik  |
 |  T59 | A név mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
+|  T60 | Az email mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
