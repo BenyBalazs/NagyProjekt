@@ -80,3 +80,4 @@
 |  T76 | A szerkesztés gomb valid, a hozzá kapcsolódó funkció megfelelően működik | Sikeres  | Kis Patrik  |
 |  T77 | A törlés gomb valid, a hozzá kapcsolódó funkció megfelelően működik | Sikeres  | Kis Patrik  |
 |  T78 | A szerkesztés gomb csak akkor valid, amennyiben egy sor ki van jelölve | Sikeres  | Kis Patrik  |
+|  T79 | A törlés gomb csak akkor valid, amennyiben egy sor ki van jelölve | Sikeres  | Kis Patrik  |
