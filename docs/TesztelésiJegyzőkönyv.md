@@ -62,3 +62,4 @@
 |  T58 | A dolgozó felvétel gombra kattintva felugrik a megfelelő ablak   | Sikeres  | Kis Patrik  |
 |  T59 | A név mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
 |  T60 | Az email mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
+|  T61 | A Telefonszám mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
