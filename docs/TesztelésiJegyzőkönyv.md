@@ -78,3 +78,4 @@
 |  T74 | A megjelenő listában a megfelelő szerelő fölé húzva a cousort, a szöveg pirosra vált | Sikeres  | Kis Patrik  |
 |  T75 | A megfelelő listaelemre kattintva, a kijelölt sor háttere szürkére vált | Sikeres  | Kis Patrik  |
 |  T76 | A szerkesztés gomb valid, a hozzá kapcsolódó funkció megfelelően működik | Sikeres  | Kis Patrik  |
+|  T77 | A törlés gomb valid, a hozzá kapcsolódó funkció megfelelően működik | Sikeres  | Kis Patrik  |
