@@ -75,3 +75,4 @@
 |  T71 | Amennyiben a dolgozó gomb fölé visszük a cousor-t abban az esetben a szöveg pirosra vált | Sikeres  | Kis Patrik  |
 |  T72 | A dolgozó gombra kattintva megjelenik a megfelelő ablak | Sikeres  | Kis Patrik  |
 |  T73 | Az ablakban sikeresen kilistázásra kerülnek a korábban felvett szerelők | Sikeres  | Kis Patrik  |
+|  T74 | A megjelenő listában a megfelelő szerelő fölé húzva a cousort, a szöveg pirosra vált | Sikeres  | Kis Patrik  |
