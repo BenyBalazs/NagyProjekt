@@ -73,3 +73,4 @@
 |  T69 | A születési dátum mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
 |  T70 | A mentés gombra kattintva, az összes megadott adat sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
 |  T71 | Amennyiben a dolgozó gomb fölé visszük a cousor-t abban az esetben a szöveg pirosra vált | Sikeres  | Kis Patrik  |
+|  T72 | A dolgozó gombra kattintva megjelenik a megfelelő ablak | Sikeres  | Kis Patrik  |
