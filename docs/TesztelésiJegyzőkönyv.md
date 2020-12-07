@@ -85,5 +85,6 @@
 |  T81 | A megjelenő szerkesztő felületben név mező valid, szerkeszthető  | Sikeres  | Kis Patrik  |
 |  T82 | A megjelenő szerkesztő felületben email mező valid, szerkeszthető  | Sikeres  | Kis Patrik  |
 |  T83 | A megjelenő szerkesztő felületben telefonszám mező valid, szerkeszthető  | Sikeres  | Kis Patrik  |
+|  T84 | A megjelenő szerkesztő felületben születési dátum mező valid, szerkeszthető  | Sikeres  | Kis Patrik  |
 
 
