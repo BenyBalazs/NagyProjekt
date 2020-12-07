@@ -65,3 +65,4 @@
 |  T61 | A Telefonszám mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
 |  T62 | A Telefonszám mezőbe, csak a megfelelő formátumú telefonszámot tudjuk megadni   | Sikeres  | Kis Patrik  |
 |  T63 | A születési dátum mező valid | Sikeres  | Kis Patrik  |
+|  T64 | A születési dátum mező mellett található naptár ikonra kattintva megjelenik a naptár | Sikeres  | Kis Patrik  |
