@@ -243,3 +243,33 @@ A szoftver célplatformja a Microsoft Windwos 10 operációs rendszer. Azonban a
    |  T53 | Lehetőség van új szerelő hozzáadására a szerelők közé.  |
    |  T54 | Lehetőség van szerelőt eltávolítani a munkafolyamatból.  |
    |  T55 | A mentésre kattintva menti a munkafolyamat módosításait.  |
+   |  T56 | A program indítása után a megfelelő helyen megjelenik a dolgozó felvétel gomb  |
+   |  T57 | Amennyiben a dolgozó felvétel gomb fölé visszük a cousor-t abban az esetben a szöveg pirosra vált   |
+   |  T58 | A dolgozó felvétel gombra kattintva felugrik a megfelelő ablak   | 
+   |  T59 | A név mező valid, képesek vagyunk beleírni a megfelelő adatokat   | 
+   |  T60 | Az email mező valid, képesek vagyunk beleírni a megfelelő adatokat   | 
+   |  T61 | A Telefonszám mező valid, képesek vagyunk beleírni a megfelelő adatokat   | 
+   |  T62 | A Telefonszám mezőbe, csak a megfelelő formátumú telefonszámot tudjuk megadni   | 
+   |  T63 | A születési dátum mező valid | 
+   |  T64 | A születési dátum mező mellett található naptár ikonra kattintva megjelenik a naptár | 
+   |  T65 | A naptárban a megfelelő dátumot kiválasztva, sikeresen megjelenik a születési dátum mező szövegdobozában | 
+   |  T66 | A name mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban |
+   |  T67 | Az email mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | 
+   |  T68 | A Telefonszám mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | 
+   |  T69 | A születési dátum mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | 
+   |  T70 | A mentés gombra kattintva, az összes megadott adat sikeresen mentésre kerül az adatbázisban | 
+   |  T71 | Amennyiben a dolgozó gomb fölé visszük a cousor-t abban az esetben a szöveg pirosra vált | 
+   |  T72 | A dolgozó gombra kattintva megjelenik a megfelelő ablak | 
+   |  T73 | Az ablakban sikeresen kilistázásra kerülnek a korábban felvett szerelők | 
+   |  T74 | A megjelenő listában a megfelelő szerelő fölé húzva a cousort, a szöveg pirosra vált | 
+   |  T75 | A megfelelő listaelemre kattintva, a kijelölt sor háttere szürkére vált | 
+   |  T76 | A szerkesztés gomb valid, a hozzá kapcsolódó funkció megfelelően működik | 
+   |  T77 | A törlés gomb valid, a hozzá kapcsolódó funkció megfelelően működik | 
+   |  T78 | A szerkesztés gomb csak akkor valid, amennyiben egy sor ki van jelölve | 
+   |  T79 | A törlés gomb csak akkor valid, amennyiben egy sor ki van jelölve | 
+   |  T80 | Egy sor kijelölése esetén a szerkesztés gombra kattintva felugrik a szerkesztési felület  | 
+   |  T81 | A megjelenő szerkesztő felületben név mező valid, szerkeszthető  | 
+   |  T82 | A megjelenő szerkesztő felületben email mező valid, szerkeszthető  |
+   |  T83 | A megjelenő szerkesztő felületben telefonszám mező valid, szerkeszthető  | 
+   |  T84 | A megjelenő szerkesztő felületben születési dátum mező valid, szerkeszthető  | 
+   |  T85 | Az adatok sikeresen módosításra kerülnek az adatbázisban  | 
