@@ -69,3 +69,4 @@
 |  T65 | A naptárban a megfelelő dátumot kiválasztva, sikeresen megjelenik a születési dátum mező szövegdobozában | Sikeres  | Kis Patrik  |
 |  T66 | A name mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
 |  T67 | Az email mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
+|  T68 | A Telefonszám mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
