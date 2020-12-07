@@ -59,3 +59,4 @@
 |  T55 | A mentésre kattintva menti a munkafolyamat módosításait.  | Sikeres  | Csontos Róbert  |
 |  T56 | A program indítása után a megfelelő helyen megjelenik a dolgozó felvétel gomb  | Sikeres  | Kis Patrik  |
 |  T57 | Amennyiben a dolgozó felvétel gomb fölé visszük a cousor-t abban az esetben a szöveg pirosra vált   | Sikeres  | Kis Patrik  |
+|  T58 | A dolgozó felvétel gombra kattintva felugrik a megfelelő ablak   | Sikeres  | Kis Patrik  |
