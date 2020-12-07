@@ -82,3 +82,6 @@
 |  T78 | A szerkesztés gomb csak akkor valid, amennyiben egy sor ki van jelölve | Sikeres  | Kis Patrik  |
 |  T79 | A törlés gomb csak akkor valid, amennyiben egy sor ki van jelölve | Sikeres  | Kis Patrik  |
 |  T80 | Egy sor kijelölése esetén a szerkesztés gombra kattintva felugrik a szerkesztési felület  | Sikeres  | Kis Patrik  |
+|  T81 | A megjelenő szerkesztő felületben név mező valid, szerkeszthető  | Sikeres  | Kis Patrik  |
+|  T82 | A megjelenő szerkesztő felületben email mező valid, szerkeszthető  | Sikeres  | Kis Patrik  |
+
