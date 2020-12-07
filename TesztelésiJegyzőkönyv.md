@@ -79,3 +79,8 @@
 |  T75 | A megfelelő listaelemre kattintva, a kijelölt sor háttere szürkére vált | Sikeres  | Kis Patrik  |
 |  T76 | A szerkesztés gomb valid, a hozzá kapcsolódó funkció megfelelően működik | Sikeres  | Kis Patrik  |
 |  T77 | A törlés gomb valid, a hozzá kapcsolódó funkció megfelelően működik | Sikeres  | Kis Patrik  |
+|  T78 | A szerkesztés gomb csak akkor valid, amennyiben egy sor ki van jelölve | Sikeres  | Kis Patrik  |
+|  T79 | A törlés gomb csak akkor valid, amennyiben egy sor ki van jelölve | Sikeres  | Kis Patrik  |
+|  T80 | Egy sor kijelölése esetén a szerkesztés gombra kattintva felugrik a szerkesztési felület  | Sikeres  | Kis Patrik  |
+|  T81 | A megjelenő szerkesztő felületben név mező valid, szerkeszthető  | Sikeres  | Kis Patrik  |
+
