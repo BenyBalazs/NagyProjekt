@@ -63,3 +63,4 @@
 |  T59 | A név mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
 |  T60 | Az email mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
 |  T61 | A Telefonszám mező valid, képesek vagyunk beleírni a megfelelő adatokat   | Sikeres  | Kis Patrik  |
+|  T62 | A Telefonszám mezőbe, csak a megfelelő formátumú telefonszámot tudjuk megadni   | Sikeres  | Kis Patrik  |
