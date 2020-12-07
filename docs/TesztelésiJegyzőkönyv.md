@@ -71,3 +71,4 @@
 |  T67 | Az email mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
 |  T68 | A Telefonszám mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
 |  T69 | A születési dátum mezőt kitöltve, értéke sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
+|  T70 | A mentés gombra kattintva, az összes megadott adat sikeresen mentésre kerül az adatbázisban | Sikeres  | Kis Patrik  |
