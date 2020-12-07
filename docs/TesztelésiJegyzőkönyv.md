@@ -57,3 +57,4 @@
 |  T53 | Lehetőség van új szerelő hozzáadására a szerelők közé.  | Sikeres  | Csontos Róbert  |
 |  T54 | Lehetőség van szerelőt eltávolítani a munkafolyamatból.  | Sikeres  | Csontos Róbert  |
 |  T55 | A mentésre kattintva menti a munkafolyamat módosításait.  | Sikeres  | Csontos Róbert  |
+|  T56 | A program indítása után a megfelelő helyen megjelenik a dolgozó felvétel gomb  | Sikeres  | Kis Patrik  |
